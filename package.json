@@ -1,0 +1,83 @@
+{
+  "name": "emotion-grid",
+  "version": "1.0.0",
+  "main": "dist/emotion-grid.cjs.js",
+  "module": "dist/emotion-grid.esm.js",
+  "repository": "git@github.com:mverissimo/emotion-grid.git",
+  "author": "Matheus Verissimo <mverissimoo@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve",
+    "postinstall": "preconstruct dev",
+    "build": "preconstruct build",
+    "release": "yarn build && npx semantic-release"
+  },
+  "preconstruct": {
+    "globals": {
+      "react": "React",
+      "react-dom": "ReactDOM"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged ",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "**/**/**/*.+(js|json|jsx|ts|tsx|mdx|md)": [
+      "pretty-quick --staged",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.10.1",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@preconstruct/cli": "^1.1.14",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/github": "^7.0.7",
+    "@semantic-release/npm": "^7.0.5",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "@typescript-eslint/eslint-plugin": "2.x",
+    "@typescript-eslint/parser": "2.x",
+    "babel-eslint": "10.x",
+    "cz-conventional-changelog": "^3.2.0",
+    "docz": "^2.3.1",
+    "eslint": "6.x",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-flowtype": "4.x",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-react": "7.x",
+    "eslint-plugin-react-hooks": "2.x",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.6",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "semantic-release": "^17.0.8",
+    "stylelint": "^13.5.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
