@@ -11,6 +11,9 @@
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
     "postinstall": "preconstruct dev",
+    "lint": "eslint src/* --ext .ts,.tsx",
+    "lint:ci": "yarn lint --format junit -o reports/eslint-results.xml",
+    "lint:fix": "yarn lint --fix",
     "build": "preconstruct build",
     "release": "yarn build && npx semantic-release"
   },
@@ -39,7 +42,8 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
+      "yarn lint",
+      "yarn lint:fix",
       "git add"
     ],
     "**/**/**/*.+(js|json|jsx|ts|tsx|mdx|md)": [
