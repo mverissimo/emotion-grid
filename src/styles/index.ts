@@ -1,0 +1,1 @@
+export { debugStyle } from './shared';
