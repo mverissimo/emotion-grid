@@ -13,7 +13,3 @@ export interface Theme {
     grid: Partial<Grid>;
   };
 }
-
-export interface StyleProps {
-  theme: Theme;
-}
