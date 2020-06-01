@@ -1,5 +1,5 @@
 {
-  "name": "emotion-grid",
+  "name": "@mverissimoo/emotion-grid",
   "version": "1.0.0",
   "main": "dist/emotion-grid.cjs.js",
   "module": "dist/emotion-grid.esm.js",
