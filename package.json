@@ -6,6 +6,9 @@
   "repository": "git@github.com:mverissimo/emotion-grid.git",
   "author": "Matheus Verissimo <mverissimoo@hotmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist/"
   ],
