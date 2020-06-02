@@ -1,9 +1,11 @@
 import { Grid, Breakpoints, Theme } from './types';
 
+import { mergeThemes } from './styles/helpers';
+
 export const BREAKPOINTS: Array<Breakpoints> = ['xs', 'sm', 'md', 'lg', 'xl'];
 
-function config(props?: Theme): Grid {
-  const base = {
+function config(props: Theme = {}): Grid {
+  const BASE = {
     container: {
       xs: 'full',
       sm: 'full',
@@ -45,7 +47,7 @@ function config(props?: Theme): Grid {
     },
   };
 
-  return { ...base, ...props };
+  return mergeThemes(BASE, props);
 }
 
 export default config;

@@ -13,7 +13,7 @@ export interface Grid {
 }
 
 export interface Theme {
-  theme: {
-    grid: Partial<Grid>;
-  };
+  grid?: Partial<Grid>;
 }
+
+export type ThemeProps = Theme | { theme: Theme };
