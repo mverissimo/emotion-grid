@@ -1,0 +1,207 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Container should render with debug styles when passed the debug prop 1`] = `
+.grid-0 {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  outline: solid 2px #0470F5;
+  background: #F9FCFF;
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-0 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-0 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-0 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    width: 100%;
+  }
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    width: 100%;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-0 {
+    width: 100%;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-0 {
+    width: 90em;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-0 {
+    width: 90em;
+  }
+}
+
+<div
+  class="grid-0"
+/>
+`;
+
+exports[`Container should render with default styles 1`] = `
+.grid-0 {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-0 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-0 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-0 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    width: 100%;
+  }
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    width: 100%;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-0 {
+    width: 100%;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-0 {
+    width: 90em;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-0 {
+    width: 90em;
+  }
+}
+
+<div
+  class="grid-0"
+/>
+`;
+
+exports[`Container should render with fluid styles when passed the fluid prop 1`] = `
+.grid-0 {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-0 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-0 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-0 {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+}
+
+<div
+  class="grid-0"
+/>
+`;
