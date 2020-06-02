@@ -16,8 +16,10 @@
     "docz:serve": "docz build && docz serve",
     "postinstall": "preconstruct dev",
     "lint": "eslint src/* --ext .ts,.tsx",
-    "lint:ci": "yarn lint --format junit -o reports/eslint-results.xml",
+    "lint:ci": "yarn lint --format junit -o reports/eslint/results.json",
     "lint:fix": "yarn lint --fix",
+    "test": "jest --watch",
+    "test:ci": "jest --ci --coverage --runInBand --json --outputFile=reports/jest/results.json",
     "build": "preconstruct build",
     "release": "yarn build && npx semantic-release"
   },
@@ -56,6 +58,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.10.2",
     "@babel/preset-typescript": "^7.10.1",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
@@ -64,9 +67,13 @@
     "@semantic-release/github": "^7.0.7",
     "@semantic-release/npm": "^7.0.5",
     "@semantic-release/release-notes-generator": "^9.0.1",
+    "@testing-library/jest-dom": "^5.9.0",
+    "@testing-library/react": "^10.0.4",
+    "@types/jest": "^25.2.3",
     "@typescript-eslint/eslint-plugin": "2.x",
     "@typescript-eslint/parser": "2.x",
     "babel-eslint": "10.x",
+    "babel-jest": "^26.0.1",
     "cz-conventional-changelog": "^3.2.0",
     "docz": "^2.3.1",
     "eslint": "6.x",
@@ -77,12 +84,17 @@
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "7.x",
     "eslint-plugin-react-hooks": "2.x",
+    "eslint-plugin-testing-library": "^3.1.4",
     "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "jest-emotion": "^10.0.32",
     "lint-staged": "^10.2.6",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "semantic-release": "^17.0.8",
-    "stylelint": "^13.5.0"
+    "stylelint": "^13.5.0",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.3"
   },
   "dependencies": {
     "@emotion/core": "^10.0.28",

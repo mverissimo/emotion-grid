@@ -1,3 +1,32 @@
 {
-    "presets": ["@babel/preset-typescript"]
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@emotion/babel-preset-css-prop",
+      {
+        "autoLabel": false,
+        "labelFormat": "[filename]--[local]"
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "node": "current"
+            }
+          }
+        ],
+        [
+          "@emotion/babel-preset-css-prop",
+          {
+            "autoLabel": false
+          }
+        ]
+      ]
+    }
+  }
 }
