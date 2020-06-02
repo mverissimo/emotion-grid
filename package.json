@@ -14,10 +14,10 @@
   ],
   "sideEffects": false,
   "scripts": {
+    "commit": "git-cz",
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
-    "postinstall": "preconstruct dev",
     "lint": "eslint src/* --ext .ts,.tsx",
     "lint:ci": "yarn lint --format junit -o reports/eslint/results.json",
     "lint:fix": "yarn lint --fix",
