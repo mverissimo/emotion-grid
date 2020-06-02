@@ -49,12 +49,10 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "yarn lint",
-      "yarn lint:fix",
-      "git add"
+      "yarn lint:fix"
     ],
     "**/**/**/*.+(js|json|jsx|ts|tsx|mdx|md)": [
-      "pretty-quick --staged",
-      "git add"
+      "pretty-quick --staged"
     ]
   },
   "devDependencies": {
