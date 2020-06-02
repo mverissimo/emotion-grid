@@ -6,7 +6,7 @@ export interface Grid {
   columns: Record<Breakpoints, number>;
   gutter: Record<Breakpoints, number>;
   breakpoints: Record<Breakpoints, number>;
-  debug?: {
+  debug: {
     backgroundColor: string;
     outlineColor: string;
   };

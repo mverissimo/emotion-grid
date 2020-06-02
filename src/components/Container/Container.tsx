@@ -8,20 +8,19 @@ import { media } from '../../utils';
 import { debugStyle } from '../../styles';
 
 export interface ContainerProps {
-  debug: boolean;
-  fluid: Boolean;
-  children: ReactElement;
+  debug?: boolean;
+  fluid?: Boolean;
+  children?: ReactElement;
 }
 
 const baseStyle = () => css`
   label: container;
+
   max-width: 100%;
 
   margin-right: auto;
   margin-left: auto;
 
-  padding-bottom: 40px;
-  background: red;
   box-sizing: border-box;
 
   ${BREAKPOINTS.map(
