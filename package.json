@@ -24,8 +24,8 @@
     "test": "jest --watch",
     "test:ci": "jest --ci --coverage --runInBand --json --outputFile=reports/jest/results.json",
     "build": "preconstruct build",
-    "prepublish": "yarn lint:ci && yarn test:ci && yarn build",
-    "release": "yarn build && npx semantic-release"
+    "prepublishOnly": "yarn build",
+    "release": "semantic-release"
   },
   "preconstruct": {
     "globals": {
