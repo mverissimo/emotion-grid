@@ -2,7 +2,7 @@ import { css } from '@emotion/core';
 
 import config from '../config';
 export interface DebugProps {
-  debug: boolean;
+  debug?: boolean;
 }
 
 export const debugStyle = ({ debug }: DebugProps) =>
