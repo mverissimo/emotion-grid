@@ -21,6 +21,7 @@
     "test": "jest --watch",
     "test:ci": "jest --ci --coverage --runInBand --json --outputFile=reports/jest/results.json",
     "build": "preconstruct build",
+    "prepublish": "yarn lint:ci && yarn test:ci && yarn build",
     "release": "yarn build && npx semantic-release"
   },
   "preconstruct": {
@@ -99,5 +100,8 @@
     "@emotion/styled": "^10.0.27",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "peerDependencies": {
+    "@emotion/styled-base": "^10.0.31"
   }
 }
