@@ -35,6 +35,9 @@ jobs:
       - name: Lint
         run: yarn lint:ci
 
+      - name: Tests
+        run: yarn test:ci
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
