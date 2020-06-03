@@ -1,5 +1,5 @@
 import { Types } from '../types';
-import config from '../config';
+import { config } from '../config';
 
 export function media(breakpoint: Types.Breakpoints) {
   const breakpoints = config().breakpoints;
