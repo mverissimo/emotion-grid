@@ -32,7 +32,7 @@ const baseStyle = () => css`
   )}
 `;
 
-const fluidStyle = ({ fluid = false }: ContainerProps) =>
+const fluidStyle = ({ fluid }: ContainerProps) =>
   fluid &&
   constants.BREAKPOINTS.map(
     (breakpoint) => css`
@@ -44,7 +44,7 @@ const fluidStyle = ({ fluid = false }: ContainerProps) =>
     `
   );
 
-const debugStyle = ({ debug = false }: ContainerProps) =>
+const debugStyle = ({ debug }: ContainerProps) =>
   debug &&
   css`
     label: debug;
