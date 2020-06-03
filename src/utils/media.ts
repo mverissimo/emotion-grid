@@ -1,7 +1,7 @@
-import { Breakpoints } from '../types';
+import { Types } from '../types';
 import config from '../config';
 
-export function media(breakpoint: Breakpoints) {
+export function media(breakpoint: Types.Breakpoints) {
   const breakpoints = config().breakpoints;
 
   if (!Object.keys(breakpoints).includes(breakpoint)) {
