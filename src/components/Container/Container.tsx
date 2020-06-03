@@ -3,9 +3,8 @@ import { FC, ReactElement } from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
 
-import config, { BREAKPOINTS } from '../../config';
+import { config, constants } from '../../config';
 import { media } from '../../utils';
-import { debugStyle } from '../../styles';
 
 export interface ContainerProps {
   debug?: boolean;
@@ -23,7 +22,7 @@ const baseStyle = () => css`
 
   box-sizing: border-box;
 
-  ${BREAKPOINTS.map(
+  ${constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
         padding-left: ${config().padding[breakpoint]}em;
@@ -33,9 +32,9 @@ const baseStyle = () => css`
   )}
 `;
 
-const fluidStyle = ({ fluid }: ContainerProps) =>
-  !fluid &&
-  BREAKPOINTS.map(
+const fluidStyle = ({ fluid = false }: ContainerProps) =>
+  fluid &&
+  constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
         ${typeof config().container[breakpoint] === 'number'
@@ -45,8 +44,17 @@ const fluidStyle = ({ fluid }: ContainerProps) =>
     `
   );
 
+const debugStyle = ({ debug = false }: ContainerProps) =>
+  debug &&
+  css`
+    label: debug;
+
+    outline: solid 2px ${config().debug.outlineColor};
+    background: ${config().debug.backgroundColor};
+  `;
+
 export const Container: FC<ContainerProps> = styled('div')<ContainerProps>(
   baseStyle,
-  debugStyle,
-  fluidStyle
+  fluidStyle,
+  debugStyle
 );
