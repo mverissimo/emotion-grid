@@ -5,6 +5,7 @@ import { css } from '@emotion/core';
 
 import { config, constants } from '../../config';
 import { media } from '../../utils';
+import { Types } from '../../types';
 
 export interface ContainerProps {
   debug?: boolean;
@@ -12,7 +13,7 @@ export interface ContainerProps {
   children?: ReactElement;
 }
 
-const baseStyle = () => css`
+const baseStyle = ({ theme }: Types.StyleProps) => css`
   label: container;
 
   max-width: 100%;
@@ -25,32 +26,32 @@ const baseStyle = () => css`
   ${constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
-        padding-left: ${config().padding[breakpoint]}em;
-        padding-right: ${config().padding[breakpoint]}em;
+        padding-left: ${config(theme).padding[breakpoint]}em;
+        padding-right: ${config(theme).padding[breakpoint]}em;
       }
     `
   )}
 `;
 
-const fluidStyle = ({ fluid }: ContainerProps) =>
+const fluidStyle = ({ theme, fluid }: Types.StyleProps & ContainerProps) =>
   fluid &&
   constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
-        ${typeof config().container[breakpoint] === 'number'
-          ? `width: ${config().container[breakpoint]}em;`
+        ${typeof config(theme).container[breakpoint] === 'number'
+          ? `width: ${config(theme).container[breakpoint]}em;`
           : `width: 100%;`}
       }
     `
   );
 
-const debugStyle = ({ debug }: ContainerProps) =>
+const debugStyle = ({ theme, debug }: Types.StyleProps & ContainerProps) =>
   debug &&
   css`
     label: debug;
 
-    outline: solid 2px ${config().debug.outlineColor};
-    background: ${config().debug.backgroundColor};
+    outline: solid 2px ${config(theme).debug.outlineColor};
+    background: ${config(theme).debug.backgroundColor};
   `;
 
 export const Container: FC<ContainerProps> = styled('div')<ContainerProps>(

@@ -17,3 +17,7 @@ export interface Theme {
 }
 
 export type ThemeProps = Theme | { theme: Theme };
+
+export interface StyleProps {
+  theme?: any;
+}
