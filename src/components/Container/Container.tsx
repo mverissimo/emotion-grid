@@ -1,4 +1,4 @@
-import { FC, ReactElement } from 'react';
+import { FC } from 'react';
 
 import styled from '@emotion/styled';
 import { css } from '@emotion/core';
@@ -6,12 +6,6 @@ import { css } from '@emotion/core';
 import { config, constants } from '../../config';
 import { media } from '../../utils';
 import { Types } from '../../types';
-
-export interface ContainerProps {
-  debug?: boolean;
-  fluid?: Boolean;
-  children?: ReactElement;
-}
 
 const baseStyle = ({ theme }: Types.StyleProps) => css`
   label: container;
@@ -33,7 +27,10 @@ const baseStyle = ({ theme }: Types.StyleProps) => css`
   )}
 `;
 
-const fluidStyle = ({ theme, fluid }: Types.StyleProps & ContainerProps) =>
+const fluidStyle = ({
+  theme,
+  fluid,
+}: Types.StyleProps & Types.ContainerProps) =>
   fluid &&
   constants.BREAKPOINTS.map(
     (breakpoint) => css`
@@ -45,17 +42,16 @@ const fluidStyle = ({ theme, fluid }: Types.StyleProps & ContainerProps) =>
     `
   );
 
-const debugStyle = ({ theme, debug }: Types.StyleProps & ContainerProps) =>
+const debugStyle = ({
+  theme,
+  debug,
+}: Types.StyleProps & Types.ContainerProps) =>
   debug &&
   css`
-    label: debug;
-
     outline: solid 2px ${config(theme).debug.outlineColor};
     background: ${config(theme).debug.backgroundColor};
   `;
 
-export const Container: FC<ContainerProps> = styled('div')<ContainerProps>(
-  baseStyle,
-  fluidStyle,
-  debugStyle
-);
+export const Container: FC<Types.ContainerProps> = styled('div')<
+  Types.ContainerProps
+>(baseStyle, fluidStyle, debugStyle);
