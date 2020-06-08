@@ -1,0 +1,19 @@
+---
+name: Row
+---
+
+import { Props } from 'docz';
+import { Container } from '../Container';
+import { Row } from './';
+
+# Row
+
+<Container debug>
+  <Row debug reverse align='center' justify={{ xl: 'flex-end' }} style={{ height: '400px'}}>
+    <h1>PROPS</h1>
+  </Row>
+
+  <Row debug reverse={['md']} align={{ lg: 'center' }} justify={{ lg: 'center' }} style={{ height: '400px'}}>
+    <h1>OBJECT</h1>
+  </Row>
+</Container>
