@@ -41,14 +41,25 @@ export interface JustifyProps {
 export interface ContainerProps {
   fluid?: boolean;
   debug?: boolean;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export interface RowProps {
   align?: AlignProps | Align;
   justify?: JustifyProps | Justify;
-  reverse?: boolean | Array<Breakpoints>;
+  reverse?: Array<Breakpoints> | boolean;
   noGutters?: boolean;
+  debug?: boolean;
+  children?: ReactNode;
+}
+
+export interface ColProps {
+  xs?: number;
+  sm?: number;
+  md?: number;
+  lg?: number;
+  xl?: number;
+  offset?: Record<Breakpoints, number> | number;
   debug?: boolean;
   children?: ReactNode;
 }
