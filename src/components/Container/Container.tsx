@@ -48,7 +48,6 @@ const debugStyle = ({
 }: Types.StyleProps & Types.ContainerProps) =>
   debug &&
   css`
-    outline: solid 2px ${config(theme).debug.outlineColor};
     background: ${config(theme).debug.backgroundColor};
   `;
 

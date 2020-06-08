@@ -6,7 +6,6 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  outline: solid 2px #0470F5;
   background: #F9FCFF;
 }
 
