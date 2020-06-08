@@ -33,7 +33,7 @@ const alignStyle = ({ align }: Types.RowProps) =>
           align[breakpoint] &&
           css`
             ${media(breakpoint)} {
-              ${`align-items: ${align[breakpoint]}`};
+              align-items: ${align[breakpoint]};
             }
           `
       )
@@ -49,7 +49,7 @@ const justifyStyle = ({ justify }: Types.RowProps) =>
           justify[breakpoint] &&
           css`
             ${media(breakpoint)} {
-              ${`justify-content: ${justify[breakpoint]}`};
+              justify-content: ${justify[breakpoint]};
             }
           `
       )
@@ -63,9 +63,9 @@ const reverseStyle = ({ reverse }: Types.RowProps) =>
     ? constants.BREAKPOINTS.map(
         (breakpoint) => css`
           ${media(breakpoint)} {
-            ${`flex-direction: ${
-              reverse.includes(breakpoint) ? 'row-reverse' : 'row'
-            }`};
+            flex-direction: ${reverse.includes(breakpoint)
+              ? 'row-reverse'
+              : 'row'};
           }
         `
       )
