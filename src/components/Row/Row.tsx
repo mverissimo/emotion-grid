@@ -7,6 +7,8 @@ import { Types } from '../../types';
 import { config, constants } from '../../config';
 import { media } from '../../utils';
 
+import { Col } from '../Col';
+
 const baseStyle = ({ theme }: Types.StyleProps) => css`
   label: row;
 
@@ -73,11 +75,13 @@ const reverseStyle = ({ reverse }: Types.RowProps) =>
         flex-direction: row-reverse;
       `);
 
-const debugStyle = ({ theme, debug }: Types.StyleProps & Types.RowProps) =>
-  debug &&
+const noGutterStyle = ({ noGutters }: Types.RowProps) =>
+  noGutters &&
   css`
-    outline: solid 2px ${config(theme).debug.outlineColor};
-    background: ${config(theme).debug.backgroundColor};
+    ${Col} {
+      padding-left: 0;
+      padding-right: 0;
+    }
   `;
 
 export const Row: FC<Types.RowProps> = styled('div')<Types.RowProps>(
@@ -85,5 +89,5 @@ export const Row: FC<Types.RowProps> = styled('div')<Types.RowProps>(
   alignStyle,
   justifyStyle,
   reverseStyle,
-  debugStyle
+  noGutterStyle
 );
