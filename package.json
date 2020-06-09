@@ -30,7 +30,9 @@
   "preconstruct": {
     "globals": {
       "react": "React",
-      "react-dom": "ReactDOM"
+      "react-dom": "ReactDOM",
+      "@emotion/styled": "styled",
+      "@emotion/core": "core"
     }
   },
   "commitlint": {
@@ -98,13 +100,11 @@
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.3"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@emotion/styled-base": "^10.0.31",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  },
-  "peerDependencies": {
-    "@emotion/styled-base": "^10.0.31"
   }
 }
