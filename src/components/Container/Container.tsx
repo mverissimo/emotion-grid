@@ -2,7 +2,7 @@
 import { FC } from 'react';
 
 import styled from '@emotion/styled';
-import { jsx, css } from '@emotion/core';
+import { css } from '@emotion/core';
 
 import { config, constants } from '../../config';
 import { media } from '../../utils';
@@ -34,7 +34,7 @@ const fluidStyle = ({
   theme,
   fluid,
 }: Types.StyleProps & Types.ContainerProps) =>
-  fluid &&
+  !fluid &&
   constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
