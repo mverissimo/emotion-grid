@@ -49,7 +49,6 @@ export interface RowProps {
   justify?: JustifyProps | Justify;
   reverse?: Array<Breakpoints> | boolean;
   noGutters?: boolean;
-  debug?: boolean;
   children?: ReactNode;
 }
 
@@ -60,7 +59,7 @@ export interface ColProps {
   lg?: number;
   xl?: number;
   offset?: Record<Breakpoints, number> | number;
-  debug?: boolean;
+  className?: string;
   children?: ReactNode;
 }
 
@@ -74,8 +73,7 @@ export interface Grid {
   gutter: Record<Breakpoints, number>;
   breakpoints: Record<Breakpoints, number>;
   debug: {
-    backgroundColor: string;
-    outlineColor: string;
+    color: string;
   };
 }
 
