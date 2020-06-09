@@ -1,11 +1,14 @@
+/** @jsx jsx */
 import { FC } from 'react';
 
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+import { jsx, css } from '@emotion/core';
 
 import { config, constants } from '../../config';
 import { media } from '../../utils';
 import { Types } from '../../types';
+
+import { Col } from '../Col';
 
 const baseStyle = ({ theme }: Types.StyleProps) => css`
   label: container;
@@ -20,8 +23,8 @@ const baseStyle = ({ theme }: Types.StyleProps) => css`
   ${constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
-        padding-left: ${config(theme).padding[breakpoint]}em;
-        padding-right: ${config(theme).padding[breakpoint]}em;
+        padding-left: ${config(theme).padding[breakpoint]}rem;
+        padding-right: ${config(theme).padding[breakpoint]}rem;
       }
     `
   )}
@@ -36,7 +39,7 @@ const fluidStyle = ({
     (breakpoint) => css`
       ${media(breakpoint)} {
         ${typeof config(theme).container[breakpoint] === 'number'
-          ? `width: ${config(theme).container[breakpoint]}em;`
+          ? `width: ${config(theme).container[breakpoint]}rem;`
           : `width: 100%;`}
       }
     `
@@ -48,7 +51,13 @@ const debugStyle = ({
 }: Types.StyleProps & Types.ContainerProps) =>
   debug &&
   css`
-    background: ${config(theme).debug.backgroundColor};
+    ${Col} {
+      background: rgba(${config(theme).debug.color}, 0.05);
+      border: 1px solid rgb(${config(theme).debug.color});
+    }
+
+    background: rgba(${config(theme).debug.color}, 0.05);
+    border: 1px solid rgb(${config(theme).debug.color});
   `;
 
 export const Container: FC<Types.ContainerProps> = styled('div')<
