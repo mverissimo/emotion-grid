@@ -1,19 +1,16 @@
-import { FC, ReactElement } from 'react';
+/** @jsx jsx */
+import { FC } from 'react';
 
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+import { jsx, css } from '@emotion/core';
 
-import config, { BREAKPOINTS } from '../../config';
+import { config, constants } from '../../config';
 import { media } from '../../utils';
-import { debugStyle } from '../../styles';
+import { Types } from '../../types';
 
-export interface ContainerProps {
-  debug?: boolean;
-  fluid?: Boolean;
-  children?: ReactElement;
-}
+import { Col } from '../Col';
 
-const baseStyle = () => css`
+const baseStyle = ({ theme }: Types.StyleProps) => css`
   label: container;
 
   max-width: 100%;
@@ -23,30 +20,46 @@ const baseStyle = () => css`
 
   box-sizing: border-box;
 
-  ${BREAKPOINTS.map(
+  ${constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
-        padding-left: ${config().padding[breakpoint]}em;
-        padding-right: ${config().padding[breakpoint]}em;
+        padding-left: ${config(theme).padding[breakpoint]}rem;
+        padding-right: ${config(theme).padding[breakpoint]}rem;
       }
     `
   )}
 `;
 
-const fluidStyle = ({ fluid }: ContainerProps) =>
-  !fluid &&
-  BREAKPOINTS.map(
+const fluidStyle = ({
+  theme,
+  fluid,
+}: Types.StyleProps & Types.ContainerProps) =>
+  fluid &&
+  constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
-        ${typeof config().container[breakpoint] === 'number'
-          ? `width: ${config().container[breakpoint]}em;`
+        ${typeof config(theme).container[breakpoint] === 'number'
+          ? `width: ${config(theme).container[breakpoint]}rem;`
           : `width: 100%;`}
       }
     `
   );
 
-export const Container: FC<ContainerProps> = styled('div')<ContainerProps>(
-  baseStyle,
-  debugStyle,
-  fluidStyle
-);
+const debugStyle = ({
+  theme,
+  debug,
+}: Types.StyleProps & Types.ContainerProps) =>
+  debug &&
+  css`
+    ${Col} {
+      background: rgba(${config(theme).debug.color}, 0.05);
+      border: 1px solid rgb(${config(theme).debug.color});
+    }
+
+    background: rgba(${config(theme).debug.color}, 0.05);
+    border: 1px solid rgb(${config(theme).debug.color});
+  `;
+
+export const Container: FC<Types.ContainerProps> = styled('div')<
+  Types.ContainerProps
+>(baseStyle, fluidStyle, debugStyle);
