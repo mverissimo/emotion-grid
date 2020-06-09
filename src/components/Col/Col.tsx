@@ -1,7 +1,8 @@
+/** @jsx jsx */
 import { FC } from 'react';
 
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+import { jsx, css } from '@emotion/core';
 
 import { config, constants } from '../../config';
 import { media } from '../../utils';
@@ -21,12 +22,13 @@ const baseStyle = ({ theme }: Types.StyleProps) => css`
   box-sizing: border-box;
 
   ${constants.BREAKPOINTS.map(
-    (breakpoint) => css`
-      ${media(breakpoint)} {
-        padding-left: ${config(theme).gutter[breakpoint] / 2}em;
-        padding-right: ${config(theme).gutter[breakpoint] / 2}em;
-      }
-    `
+    (breakpoint) =>
+      css`
+        ${media(breakpoint)} {
+          padding-left: ${config(theme).gutter[breakpoint] / 2}rem;
+          padding-right: ${config(theme).gutter[breakpoint] / 2}rem;
+        }
+      `
   )}
 `;
 
@@ -68,16 +70,12 @@ const offsetStyle = ({ theme, offset }: Types.StyleProps & Types.ColProps) =>
         margin-left: ${(offset / config(theme).columns['xs']) * 100}%;
       `);
 
-const debugStyle = ({ theme, debug }: Types.StyleProps & Types.ColProps) =>
-  debug &&
-  css`
-    outline: solid 2px ${config(theme).debug.outlineColor};
-    background: ${config(theme).debug.backgroundColor};
-  `;
+const BaseCol: FC<Types.ColProps> = ({ className, children }) => (
+  <div className={className}>{children}</div>
+);
 
-export const Col: FC<Types.ColProps> = styled('div')<Types.ColProps>(
+export const Col = styled(BaseCol)<Types.ColProps>(
   baseStyle,
   sizeStyle,
-  offsetStyle,
-  debugStyle
+  offsetStyle
 );
