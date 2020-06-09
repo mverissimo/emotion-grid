@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { Row } from './Row';
+import { Col } from '../Col';
 
 describe('Row', () => {
   const breakpoints = ['xs', 'sm', 'md', 'lg', 'xl'] as const;
@@ -69,6 +70,16 @@ describe('Row', () => {
 
   it('should render justify styles when passed the align prop as object', () => {
     const { container } = render(<Row justify={{ md: 'center' }} />);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('should render with noGutters styles when passed the noGutters prop', () => {
+    const { container } = render(
+      <Row noGutters>
+        <Col />
+      </Row>
+    );
 
     expect(container.firstChild).toMatchSnapshot();
   });

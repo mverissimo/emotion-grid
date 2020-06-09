@@ -52,7 +52,7 @@ exports[`Row should render align styles when passed the align baseline prop as s
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -108,7 +108,7 @@ exports[`Row should render align styles when passed the align center prop as str
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -164,7 +164,7 @@ exports[`Row should render align styles when passed the align flex-end prop as s
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -220,7 +220,7 @@ exports[`Row should render align styles when passed the align flex-start prop as
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -281,7 +281,7 @@ exports[`Row should render align styles when passed the align prop as object 1`]
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -337,7 +337,7 @@ exports[`Row should render align styles when passed the align stretch prop as st
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -398,7 +398,7 @@ exports[`Row should render justify styles when passed the align prop as object 1
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -454,7 +454,7 @@ exports[`Row should render justify styles when when passed the justify center pr
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -510,7 +510,7 @@ exports[`Row should render justify styles when when passed the justify flex-end 
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -566,7 +566,7 @@ exports[`Row should render justify styles when when passed the justify flex-star
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -622,7 +622,7 @@ exports[`Row should render justify styles when when passed the justify space-aro
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -678,7 +678,7 @@ exports[`Row should render justify styles when when passed the justify space-bet
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -770,7 +770,7 @@ exports[`Row should render reverse styles with breakpoint lg 1`] = `
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -862,7 +862,7 @@ exports[`Row should render reverse styles with breakpoint md 1`] = `
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -954,7 +954,7 @@ exports[`Row should render reverse styles with breakpoint sm 1`] = `
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -1046,7 +1046,7 @@ exports[`Row should render reverse styles with breakpoint xl 1`] = `
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -1138,7 +1138,7 @@ exports[`Row should render reverse styles with breakpoint xs 1`] = `
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;
 
@@ -1190,8 +1190,118 @@ exports[`Row should render with default styles 1`] = `
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
+`;
+
+exports[`Row should render with noGutters styles when passed the noGutters prop 1`] = `
+.grid-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+@media (min-width:0em) {
+  .grid-2 {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+}
+
+@media (min-width:0em) {
+  .grid-2 {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-2 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-2 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-2 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+.grid-2 .grid-1 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.grid-0 {
+  position: relative;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (min-width:0em) {
+  .grid-0 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+<div
+  class="grid-2 grid-3"
+>
+  <div
+    class="grid-0 grid-1"
+  />
+</div>
 `;
 
 exports[`Row should render with reverse styles when passed the reverse prop 1`] = `
@@ -1245,6 +1355,6 @@ exports[`Row should render with reverse styles when passed the reverse prop 1`] 
 }
 
 <div
-  class="grid-0"
+  class="grid-0 grid-1"
 />
 `;

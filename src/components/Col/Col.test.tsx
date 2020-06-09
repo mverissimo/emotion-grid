@@ -27,7 +27,7 @@ describe('Col', () => {
   });
 
   it('should render with offset styles', () => {
-    const { container } = render(<Col offset={1} />);
+    const { container } = render(<Col />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
