@@ -1,4 +1,5 @@
 import { createSerializer } from 'jest-emotion';
+import mediaQuery from 'css-mediaquery';
 
 expect.addSnapshotSerializer(
   createSerializer({
@@ -7,3 +8,7 @@ expect.addSnapshotSerializer(
     },
   })
 );
+
+global.createMatchMedia = (width) => (query) => ({
+  matches: mediaQuery.match(query, { width }),
+});
