@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, ReactElement } from 'react';
 
 export type Breakpoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
@@ -41,6 +41,7 @@ export interface JustifyProps {
 export interface ContainerProps {
   fluid?: boolean;
   debug?: boolean;
+  className?: string;
   children?: ReactNode;
 }
 
@@ -49,6 +50,7 @@ export interface RowProps {
   justify?: JustifyProps | Justify;
   reverse?: Array<Breakpoints> | boolean;
   noGutters?: boolean;
+  className?: string;
   children?: ReactNode;
 }
 
@@ -62,6 +64,24 @@ export interface ColProps {
   className?: string;
   children?: ReactNode;
 }
+
+/**
+ * Utilities
+ */
+export interface ScreenClassProps {
+  render: (screen: string) => ReactElement;
+}
+
+export interface HiddenProps {
+  xs?: boolean;
+  sm?: boolean;
+  md?: boolean;
+  lg?: boolean;
+  xl?: boolean;
+  children: React.ReactNode;
+}
+
+export interface VisibleProps extends HiddenProps {}
 
 /**
  * Grid config

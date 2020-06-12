@@ -39,7 +39,7 @@ export const DEFAULT_CONFIG: Types.Grid = {
   },
   breakpoints: {
     xs: 0,
-    sm: 0,
+    sm: 33.75,
     md: 48,
     lg: 64,
     xl: 71.25,

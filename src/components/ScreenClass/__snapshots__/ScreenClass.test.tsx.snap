@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScreenClass should render with current screen 0 1`] = `<div />`;
+
+exports[`ScreenClass should render with current screen 33.75 1`] = `
+<div>
+  sm
+</div>
+`;
+
+exports[`ScreenClass should render with current screen 48 1`] = `
+<div>
+  md
+</div>
+`;
+
+exports[`ScreenClass should render with current screen 64 1`] = `
+<div>
+  lg
+</div>
+`;
+
+exports[`ScreenClass should render with current screen 71.25 1`] = `
+<div>
+  xl
+</div>
+`;

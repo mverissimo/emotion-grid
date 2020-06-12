@@ -34,7 +34,7 @@ const fluidStyle = ({
   theme,
   fluid,
 }: Types.StyleProps & Types.ContainerProps) =>
-  fluid &&
+  !fluid &&
   constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
@@ -60,6 +60,12 @@ const debugStyle = ({
     border: 1px solid rgb(${config(theme).debug.color});
   `;
 
-export const Container: FC<Types.ContainerProps> = styled('div')<
-  Types.ContainerProps
->(baseStyle, fluidStyle, debugStyle);
+const BaseContainer: FC<Types.ContainerProps> = ({ className, children }) => (
+  <div className={className}>{children}</div>
+);
+
+export const Container = styled(BaseContainer)<Types.ContainerProps>(
+  baseStyle,
+  fluidStyle,
+  debugStyle
+);
