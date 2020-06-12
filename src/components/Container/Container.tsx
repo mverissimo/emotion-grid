@@ -55,9 +55,6 @@ const debugStyle = ({
       background: rgba(${config(theme).debug.color}, 0.05);
       border: 1px solid rgb(${config(theme).debug.color});
     }
-
-    background: rgba(${config(theme).debug.color}, 0.05);
-    border: 1px solid rgb(${config(theme).debug.color});
   `;
 
 const BaseContainer: FC<Types.ContainerProps> = ({ className, children }) => (
