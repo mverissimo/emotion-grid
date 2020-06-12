@@ -2,7 +2,11 @@
 
 exports[`ScreenClass should render with current screen 0 1`] = `<div />`;
 
-exports[`ScreenClass should render with current screen 0 2`] = `<div />`;
+exports[`ScreenClass should render with current screen 33.75 1`] = `
+<div>
+  sm
+</div>
+`;
 
 exports[`ScreenClass should render with current screen 48 1`] = `
 <div>
