@@ -2,7 +2,7 @@
 import { FC } from 'react';
 
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+import { jsx, css } from '@emotion/core';
 
 import { config, constants } from '../../config';
 import { media } from '../../utils';
@@ -60,6 +60,12 @@ const debugStyle = ({
     border: 1px solid rgb(${config(theme).debug.color});
   `;
 
-export const Container: FC<Types.ContainerProps> = styled('div')<
-  Types.ContainerProps
->(baseStyle, fluidStyle, debugStyle);
+const BaseContainer: FC<Types.ContainerProps> = ({ className, children }) => (
+  <div className={className}>{children}</div>
+);
+
+export const Container = styled(BaseContainer)<Types.ContainerProps>(
+  baseStyle,
+  fluidStyle,
+  debugStyle
+);
