@@ -18,7 +18,7 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "docz:serve": "docz build && docz serve",
-    "lint": "eslint src/* --ext .ts,.tsx",
+    "lint": "eslint src/* --ext .ts,.tsx --no-error-on-unmatched-pattern",
     "lint:ci": "yarn lint --format junit -o reports/eslint/results.json",
     "lint:fix": "yarn lint --fix",
     "test": "jest --watch",
