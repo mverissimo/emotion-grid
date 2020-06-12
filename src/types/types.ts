@@ -41,6 +41,7 @@ export interface JustifyProps {
 export interface ContainerProps {
   fluid?: boolean;
   debug?: boolean;
+  className?: string;
   children?: ReactNode;
 }
 
@@ -49,6 +50,7 @@ export interface RowProps {
   justify?: JustifyProps | Justify;
   reverse?: Array<Breakpoints> | boolean;
   noGutters?: boolean;
+  className?: string;
   children?: ReactNode;
 }
 
