@@ -23,7 +23,7 @@ exports[`Row should render align styles when passed the align baseline prop as s
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -79,7 +79,7 @@ exports[`Row should render align styles when passed the align center prop as str
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -135,7 +135,7 @@ exports[`Row should render align styles when passed the align flex-end prop as s
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -191,7 +191,7 @@ exports[`Row should render align styles when passed the align flex-start prop as
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -243,7 +243,7 @@ exports[`Row should render align styles when passed the align prop as object 1`]
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -308,7 +308,7 @@ exports[`Row should render align styles when passed the align stretch prop as st
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -360,7 +360,7 @@ exports[`Row should render justify styles when passed the align prop as object 1
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -425,7 +425,7 @@ exports[`Row should render justify styles when when passed the justify center pr
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -481,7 +481,7 @@ exports[`Row should render justify styles when when passed the justify flex-end 
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -537,7 +537,7 @@ exports[`Row should render justify styles when when passed the justify flex-star
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -593,7 +593,7 @@ exports[`Row should render justify styles when when passed the justify space-aro
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -649,7 +649,7 @@ exports[`Row should render justify styles when when passed the justify space-bet
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -701,7 +701,7 @@ exports[`Row should render reverse styles with breakpoint lg 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -737,7 +737,7 @@ exports[`Row should render reverse styles with breakpoint lg 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -793,7 +793,7 @@ exports[`Row should render reverse styles with breakpoint md 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -829,7 +829,7 @@ exports[`Row should render reverse styles with breakpoint md 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -885,7 +885,7 @@ exports[`Row should render reverse styles with breakpoint sm 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -921,7 +921,7 @@ exports[`Row should render reverse styles with breakpoint sm 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
@@ -977,7 +977,7 @@ exports[`Row should render reverse styles with breakpoint xl 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -1013,7 +1013,7 @@ exports[`Row should render reverse styles with breakpoint xl 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -1069,7 +1069,7 @@ exports[`Row should render reverse styles with breakpoint xs 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -1105,7 +1105,7 @@ exports[`Row should render reverse styles with breakpoint xs 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -1161,7 +1161,7 @@ exports[`Row should render with default styles 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -1213,7 +1213,7 @@ exports[`Row should render with noGutters styles when passed the noGutters prop 
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-2 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
@@ -1267,7 +1267,7 @@ exports[`Row should render with noGutters styles when passed the noGutters prop 
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -1326,7 +1326,7 @@ exports[`Row should render with reverse styles when passed the reverse prop 1`] 
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:33.75em) {
   .grid-0 {
     margin-left: -0.5rem;
     margin-right: -0.5rem;
