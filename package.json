@@ -103,7 +103,9 @@
     "typescript": "^3.9.3"
   },
   "peerDependencies": {
-    "@emotion/core": "^10.0.28",
+    "@emotion/core": "^10.0.28"
+  },
+  "dependencies": {
     "@emotion/styled": "^10.0.27",
     "@emotion/styled-base": "^10.0.31",
     "emotion-theming": "^10.0.27",
