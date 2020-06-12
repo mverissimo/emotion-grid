@@ -1,7 +1,8 @@
+/** @jsx jsx */
 import { FC } from 'react';
 
 import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+import { jsx, css } from '@emotion/core';
 
 import { Types } from '../../types';
 import { config, constants } from '../../config';
@@ -84,7 +85,11 @@ const noGutterStyle = ({ noGutters }: Types.RowProps) =>
     }
   `;
 
-export const Row: FC<Types.RowProps> = styled('div')<Types.RowProps>(
+const BaseRow: FC<Types.RowProps> = ({ className, children }) => (
+  <div className={className}>{children}</div>
+);
+
+export const Row = styled(BaseRow)<Types.RowProps>(
   baseStyle,
   alignStyle,
   justifyStyle,
