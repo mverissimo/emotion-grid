@@ -105,6 +105,36 @@ exports[`Col should render with offset styles 1`] = `
   }
 }
 
+@media (min-width:1em) {
+  .grid-0 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width:33.75em) {
+  .grid-0 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-0 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-0 {
+    margin-left: 33.33333333333333%;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-0 {
+    margin-left: 41.66666666666667%;
+  }
+}
+
 <div
   class="grid-0 grid-1"
 />
@@ -195,7 +225,7 @@ exports[`Col should render with offset styles for media [object Object] 1`] = `
 />
 `;
 
-exports[`Col should render with size styles for media [object Object] 1`] = `
+exports[`Col should render with width styles for media [object Object] 1`] = `
 .grid-0 {
   position: relative;
   -webkit-flex-basis: 0;

@@ -20,14 +20,14 @@ describe('Col', () => {
     },
   ] as const;
 
-  it.each(sizes)('should render with size styles for media %s', (size) => {
+  it.each(sizes)('should render with width styles for media %s', (size) => {
     const { container } = render(<Col {...size} />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it('should render with offset styles', () => {
-    const { container } = render(<Col />);
+  it.each(sizes)('should render with offset styles', (size) => {
+    const { container } = render(<Col offset={size} />);
 
     expect(container.firstChild).toMatchSnapshot();
   });
