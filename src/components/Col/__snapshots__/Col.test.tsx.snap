@@ -15,17 +15,17 @@ exports[`Col should render with default styles 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
@@ -70,17 +70,17 @@ exports[`Col should render with offset styles 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
@@ -110,7 +110,7 @@ exports[`Col should render with offset styles 1`] = `
 />
 `;
 
-exports[`Col should render with offset styles for media { xs: 1, sm: 2, md: 3, lg: 4, xl: 5 } 1`] = `
+exports[`Col should render with offset styles for media [object Object] 1`] = `
 .grid-0 {
   position: relative;
   -webkit-flex-basis: 0;
@@ -125,17 +125,17 @@ exports[`Col should render with offset styles for media { xs: 1, sm: 2, md: 3, l
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
@@ -160,7 +160,7 @@ exports[`Col should render with offset styles for media { xs: 1, sm: 2, md: 3, l
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
     margin-left: 25%;
   }
@@ -174,7 +174,7 @@ exports[`Col should render with offset styles for media { xs: 1, sm: 2, md: 3, l
 
 @media (min-width:48em) {
   .grid-0 {
-    margin-left: 37.5%;
+    margin-left: 25%;
   }
 }
 
@@ -195,7 +195,7 @@ exports[`Col should render with offset styles for media { xs: 1, sm: 2, md: 3, l
 />
 `;
 
-exports[`Col should render with size styles for media { xs: 1, sm: 2, md: 3, lg: 4, xl: 5 } 1`] = `
+exports[`Col should render with size styles for media [object Object] 1`] = `
 .grid-0 {
   position: relative;
   -webkit-flex-basis: 0;
@@ -210,17 +210,17 @@ exports[`Col should render with size styles for media { xs: 1, sm: 2, md: 3, lg:
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
@@ -245,7 +245,7 @@ exports[`Col should render with size styles for media { xs: 1, sm: 2, md: 3, lg:
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
     -webkit-flex: 0 0 25%;
     -ms-flex: 0 0 25%;
@@ -265,10 +265,10 @@ exports[`Col should render with size styles for media { xs: 1, sm: 2, md: 3, lg:
 
 @media (min-width:48em) {
   .grid-0 {
-    -webkit-flex: 0 0 37.5%;
-    -ms-flex: 0 0 37.5%;
-    flex: 0 0 37.5%;
-    max-width: 37.5%;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 }
 
