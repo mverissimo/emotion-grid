@@ -22,7 +22,7 @@
     "lint:ci": "yarn lint --format junit -o reports/eslint/results.json",
     "lint:fix": "yarn lint --fix",
     "test": "jest --watch",
-    "test:ci": "jest --ci --coverage --runInBand --json --outputFile=reports/jest/results.json",
+    "test:ci": "jest --ci --coverage -u --runInBand --json --outputFile=reports/jest/results.json",
     "build": "preconstruct build",
     "prepublishOnly": "yarn build",
     "release": "semantic-release"
