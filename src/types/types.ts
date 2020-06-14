@@ -42,7 +42,7 @@ export interface ContainerProps {
   fluid?: boolean;
   debug?: boolean;
   className?: string;
-  children?: ReactNode;
+  children: ReactNode;
 }
 
 export interface RowProps {
@@ -51,7 +51,7 @@ export interface RowProps {
   reverse?: Array<Breakpoints> | boolean;
   noGutters?: boolean;
   className?: string;
-  children?: ReactNode;
+  children: ReactNode;
 }
 
 export interface ColProps {
@@ -62,7 +62,7 @@ export interface ColProps {
   xl?: number;
   offset?: Record<Breakpoints, number> | number;
   className?: string;
-  children?: ReactNode;
+  children: ReactNode;
 }
 
 /**

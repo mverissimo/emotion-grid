@@ -5,7 +5,7 @@ import { Col } from './Col';
 
 describe('Col', () => {
   it('should render with default styles', () => {
-    const { container } = render(<Col />);
+    const { container } = render(<Col>Col</Col>);
 
     expect(container.firstChild).toMatchSnapshot();
   });
@@ -21,19 +21,19 @@ describe('Col', () => {
   ] as const;
 
   it.each(sizes)('should render with width styles for media %s', (size) => {
-    const { container } = render(<Col {...size} />);
+    const { container } = render(<Col {...size}>Col</Col>);
 
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it.each(sizes)('should render with offset styles', (size) => {
-    const { container } = render(<Col offset={size} />);
+    const { container } = render(<Col offset={size}>Col</Col>);
 
     expect(container.firstChild).toMatchSnapshot();
   });
 
   it.each(sizes)('should render with offset styles for media %s', (size) => {
-    const { container } = render(<Col offset={size} />);
+    const { container } = render(<Col offset={size}>Col</Col>);
 
     expect(container.firstChild).toMatchSnapshot();
   });

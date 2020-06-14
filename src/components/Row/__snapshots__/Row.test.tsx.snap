@@ -53,7 +53,10 @@ exports[`Row should render align styles when passed the align baseline prop as s
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row align 
+  baseline
+</div>
 `;
 
 exports[`Row should render align styles when passed the align center prop as string 1`] = `
@@ -109,7 +112,10 @@ exports[`Row should render align styles when passed the align center prop as str
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row align 
+  center
+</div>
 `;
 
 exports[`Row should render align styles when passed the align flex-end prop as string 1`] = `
@@ -165,7 +171,10 @@ exports[`Row should render align styles when passed the align flex-end prop as s
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row align 
+  flex-end
+</div>
 `;
 
 exports[`Row should render align styles when passed the align flex-start prop as string 1`] = `
@@ -221,7 +230,10 @@ exports[`Row should render align styles when passed the align flex-start prop as
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row align 
+  flex-start
+</div>
 `;
 
 exports[`Row should render align styles when passed the align prop as object 1`] = `
@@ -282,7 +294,9 @@ exports[`Row should render align styles when passed the align prop as object 1`]
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row align
+</div>
 `;
 
 exports[`Row should render align styles when passed the align stretch prop as string 1`] = `
@@ -338,7 +352,10 @@ exports[`Row should render align styles when passed the align stretch prop as st
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row align 
+  stretch
+</div>
 `;
 
 exports[`Row should render justify styles when passed the align prop as object 1`] = `
@@ -399,7 +416,9 @@ exports[`Row should render justify styles when passed the align prop as object 1
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row justify
+</div>
 `;
 
 exports[`Row should render justify styles when when passed the justify center prop as string 1`] = `
@@ -455,7 +474,10 @@ exports[`Row should render justify styles when when passed the justify center pr
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row justify 
+  center
+</div>
 `;
 
 exports[`Row should render justify styles when when passed the justify flex-end prop as string 1`] = `
@@ -511,7 +533,10 @@ exports[`Row should render justify styles when when passed the justify flex-end 
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row justify 
+  flex-end
+</div>
 `;
 
 exports[`Row should render justify styles when when passed the justify flex-start prop as string 1`] = `
@@ -567,7 +592,10 @@ exports[`Row should render justify styles when when passed the justify flex-star
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row justify 
+  flex-start
+</div>
 `;
 
 exports[`Row should render justify styles when when passed the justify space-around prop as string 1`] = `
@@ -623,7 +651,10 @@ exports[`Row should render justify styles when when passed the justify space-aro
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row justify 
+  space-around
+</div>
 `;
 
 exports[`Row should render justify styles when when passed the justify space-between prop as string 1`] = `
@@ -679,7 +710,10 @@ exports[`Row should render justify styles when when passed the justify space-bet
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row justify 
+  space-between
+</div>
 `;
 
 exports[`Row should render reverse styles with breakpoint lg 1`] = `
@@ -771,7 +805,10 @@ exports[`Row should render reverse styles with breakpoint lg 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row reverse 
+  lg
+</div>
 `;
 
 exports[`Row should render reverse styles with breakpoint md 1`] = `
@@ -863,7 +900,10 @@ exports[`Row should render reverse styles with breakpoint md 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row reverse 
+  md
+</div>
 `;
 
 exports[`Row should render reverse styles with breakpoint sm 1`] = `
@@ -955,7 +995,10 @@ exports[`Row should render reverse styles with breakpoint sm 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row reverse 
+  sm
+</div>
 `;
 
 exports[`Row should render reverse styles with breakpoint xl 1`] = `
@@ -1047,7 +1090,10 @@ exports[`Row should render reverse styles with breakpoint xl 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row reverse 
+  xl
+</div>
 `;
 
 exports[`Row should render reverse styles with breakpoint xs 1`] = `
@@ -1139,7 +1185,10 @@ exports[`Row should render reverse styles with breakpoint xs 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row reverse 
+  xs
+</div>
 `;
 
 exports[`Row should render with default styles 1`] = `
@@ -1191,7 +1240,9 @@ exports[`Row should render with default styles 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row
+</div>
 `;
 
 exports[`Row should render with noGutters styles when passed the noGutters prop 1`] = `
@@ -1300,7 +1351,9 @@ exports[`Row should render with noGutters styles when passed the noGutters prop 
 >
   <div
     class="grid-0 grid-1"
-  />
+  >
+    Col
+  </div>
 </div>
 `;
 
@@ -1356,5 +1409,7 @@ exports[`Row should render with reverse styles when passed the reverse prop 1`] 
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Row reverse
+</div>
 `;

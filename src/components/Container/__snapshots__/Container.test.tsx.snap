@@ -188,7 +188,9 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   >
     <div
       class="grid-0 grid-1"
-    />
+    >
+      Col
+    </div>
   </div>
 </div>
 `;
@@ -271,7 +273,9 @@ exports[`Container should render with default styles 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Container
+</div>
 `;
 
 exports[`Container should render with fluid styles when passed the fluid prop 1`] = `
@@ -319,5 +323,7 @@ exports[`Container should render with fluid styles when passed the fluid prop 1`
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Container fluid
+</div>
 `;

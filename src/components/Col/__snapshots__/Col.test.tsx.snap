@@ -52,7 +52,9 @@ exports[`Col should render with default styles 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Col
+</div>
 `;
 
 exports[`Col should render with offset styles 1`] = `
@@ -137,7 +139,9 @@ exports[`Col should render with offset styles 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Col
+</div>
 `;
 
 exports[`Col should render with offset styles for media [object Object] 1`] = `
@@ -222,7 +226,9 @@ exports[`Col should render with offset styles for media [object Object] 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Col
+</div>
 `;
 
 exports[`Col should render with width styles for media [object Object] 1`] = `
@@ -322,5 +328,7 @@ exports[`Col should render with width styles for media [object Object] 1`] = `
 
 <div
   class="grid-0 grid-1"
-/>
+>
+  Col
+</div>
 `;
