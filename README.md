@@ -6,7 +6,7 @@ A responsive (mobile-first) grid system built with emotion.
 
 ### Installation
 
-Can you use **yarn** or **npm**.
+You can use **yarn** or **npm**.
 
 ```
 $ yarn add emotion-grid
