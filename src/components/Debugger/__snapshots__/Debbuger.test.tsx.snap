@@ -55,42 +55,42 @@ exports[`Debugger should render with current screen %s 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:48em) {
   .grid-4 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:64em) {
   .grid-4 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:71.25em) {
   .grid-4 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-4 {
     width: 100%;
   }
@@ -105,18 +105,21 @@ exports[`Debugger should render with current screen %s 1`] = `
 @media (min-width:48em) {
   .grid-4 {
     width: 100%;
+    max-width: 45rem;
   }
 }
 
 @media (min-width:64em) {
   .grid-4 {
-    width: 90rem;
+    width: 100%;
+    max-width: 60rem;
   }
 }
 
 @media (min-width:71.25em) {
   .grid-4 {
-    width: 90rem;
+    width: 100%;
+    max-width: 71.25rem;
   }
 }
 
@@ -131,17 +134,17 @@ exports[`Debugger should render with current screen %s 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-2 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-2 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -180,17 +183,17 @@ exports[`Debugger should render with current screen %s 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 

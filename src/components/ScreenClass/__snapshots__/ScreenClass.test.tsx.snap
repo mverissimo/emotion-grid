@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ScreenClass should render with current screen 0 1`] = `<div />`;
+exports[`ScreenClass should render with current screen 1 1`] = `
+<div>
+  xs
+</div>
+`;
 
 exports[`ScreenClass should render with current screen 33.75 1`] = `
 <div>

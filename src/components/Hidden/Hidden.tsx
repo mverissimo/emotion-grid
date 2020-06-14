@@ -13,7 +13,7 @@ function Hidden({
   theme,
   children,
 }: Types.StyleProps & Types.HiddenProps) {
-  const [{ screen }, setState] = useState({ screen: 'xs' });
+  const [{ screen }, setState] = useState({ screen: getBreakpoint() });
 
   useEffect(() => {
     const setScreen = () => {

@@ -1,0 +1,118 @@
+---
+name: API
+route: /api
+---
+
+import { Playground } from 'docz';
+import { ThemeProvider } from 'emotion-theming';
+import { Container, Row, Col } from '../';
+
+# API
+
+## Default values
+
+With exception the [media query](/utilities) that use **rem** unit.
+
+|             | type   | Extra small (xs) | Small (sm) | Medium (md) | Larger (lg) | Extra large (xl) |
+| ----------- | ------ | ---------------- | ---------- | ----------- | ----------- | ---------------- |
+| Container   | shape  | 'full'           | 'full'     | 45          | 60          | 71.25            |
+| Padding     | number | 1.875            | 1.875      | 1.875       | 1.875       | 1.875            |
+| Columns     | number | 4                | 8          | 12          | 12          | 12               |
+| Gutter      | number | 1.875            | 1.875      | 1.875       | 1.875       | 1.875            |
+| Breakpoints | number | 1                | 33.75      | 48          | 64          | 71.25            |
+
+### debug
+
+> You can use only rgb color
+
+|       | type   | default       | description                 |
+| ----- | ------ | ------------- | --------------------------- |
+| debug | string | '4, 112, 245' | Color of grid on debug mode |
+
+## Custom config
+
+To set your custom config, you need to import the ThemeProvider from emotion theming', and pass a named object `grid` to the theme prop, as the example below:
+
+```jsx
+import { ThemeProvider } from 'emotion-theming';
+```
+
+> Try to change the config in playground:
+
+<Playground>
+  {() => {
+    const customConf = {
+      grid: {
+        container: {
+          xs: 'full',
+          sm: 'full',
+          md: 45,
+          lg: 60,
+          xl: 71.25,
+        },
+        padding: {
+          xs: 1.875,
+          sm: 1.875,
+          md: 1.875,
+          lg: 1.875,
+          xl: 1.875,
+        },
+        columns: {
+          xs: 4,
+          sm: 8,
+          md: 12,
+          lg: 12,
+          xl: 12,
+        },
+        gutter: {
+          xs: 1.875,
+          sm: 1.875,
+          md: 1.875,
+          lg: 1.875,
+          xl: 1.875,
+        },
+        breakpoints: {
+          xs: 1,
+          sm: 33.75,
+          md: 48,
+          lg: 64,
+          xl: 71.25,
+        },
+        debug: {
+          color: '4, 112, 245',
+        },
+      },
+    };
+    return (
+      <ThemeProvider theme={customConf}>
+        <Container debug>
+          <Row>
+            <Col>Col auto</Col>
+          </Row>
+          <Row>
+            <Col md={4} lg={6}>
+              Col-md-4 Col-lg-6
+            </Col>
+            <Col md={4} lg={6}>
+              Col-md-4 Col-lg-6
+            </Col>
+          </Row>
+          <Row>
+            <Col md={2} lg={3}>
+              Col-md-2 Col-lg-3
+            </Col>
+            <Col md={2} lg={3}>
+              Col-md-2 Col-lg-3
+            </Col>
+            <Col md={2} lg={3}>
+              Col-md-2 Col-lg-3
+            </Col>
+            <Col md={2} lg={3}>
+              Col-md-2 Col-lg-3
+            </Col>
+          </Row>
+        </Container>
+      </ThemeProvider>
+    );
+  }}
+</Playground>

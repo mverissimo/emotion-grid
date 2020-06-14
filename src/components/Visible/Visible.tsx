@@ -13,7 +13,7 @@ function Visible({
   theme,
   children,
 }: Types.StyleProps & Types.VisibleProps) {
-  const [{ screen }, setState] = useState({ screen: 'xs' });
+  const [{ screen }, setState] = useState({ screen: getBreakpoint() });
 
   useEffect(() => {
     const setScreen = () => {

@@ -1,0 +1,174 @@
+---
+name: Usage
+route: /usage
+---
+
+import { Playground } from 'docz';
+import { Container, Row, Col } from '../';
+
+## Basic grid
+
+You can create a basic grid system by using a single set of `Row` and `Col` grid assembly, all of the columns (Col) must be placed in `Row`.
+
+<Playground>
+  <Container debug>
+    <Row>
+      <Col>Col auto</Col>
+    </Row>
+    <Row>
+      <Col sm={4} md={4} lg={6}>
+        sm-4 md-4 lg-6
+      </Col>
+      <Col sm={4} md={8} lg={6}>
+        sm-4 md-8 lg-6
+      </Col>
+    </Row>
+    <Row>
+      <Col sm={2} md={3} lg={4}>
+        sm-2 md-3 lg-4
+      </Col>
+      <Col sm={2} md={3} lg={2}>
+        sm-2 md-3 lg-2
+      </Col>
+      <Col sm={2} md={3} lg={4}>
+        sm-2 md-3 lg-4
+      </Col>
+      <Col sm={2} md={3} lg={2}>
+        sm-2 md-3 lg-2
+      </Col>
+    </Row>
+  </Container>
+</Playground>
+
+## Column offset
+
+You can use the prop **offset** as a **number** or **object**.
+
+> If choice number as a prop, the number of columns of the screen [**xs**](/api) will be used as the base.
+
+<Playground>
+  <Container debug>
+    <Row>
+      <Col md={4} offset={1}>offset-1</Col>
+    </Row>
+    <Row>
+      <Col md={4} lg={6} offset={{ md: 4, lg: 3 }}>offset-md-4 offset-lg-3</Col>
+      <Col md={6} lg={9} offset={{ md: 4, lg: 3  }}>offset-md-4 offset-lg-3</Col>
+    </Row>
+
+  </Container>
+</Playground>
+
+## Alignment
+
+Align and justify working with flexbox and both accept a **string** or **object.**
+
+### Vertical
+
+> Props accepted: baseline | center | flex-start | flex-end | stretch.
+
+<Playground>
+  <Container debug>
+    <Row align="flex-start">
+      <Col sm={4} md={6}>
+        Col-sm-4 Col-md-6
+      </Col>
+      <Col sm={4} md={6}>
+        Col-sm-4 Col-md-6
+      </Col>
+    </Row>
+    <Row align={{ lg: 'flex-end', xl: 'center' }}>
+      <Col sm={4} md={6}>
+        Col-sm-4 Col-md-6
+      </Col>
+      <Col sm={4} md={6}>
+        Col-sm-4 Col-md-6
+      </Col>
+    </Row>
+    <Row align={{ lg: 'center', xl: 'flex-end' }}>
+      <Col sm={4} md={6}>
+        Col-sm-4 Col-md-6
+      </Col>
+      <Col sm={4} md={6}>
+        Col-sm-4 Col-md-6
+      </Col>
+    </Row>
+  </Container>
+</Playground>
+
+### Horizontal
+
+> Props accepted: center | flex-end | flex-start | space-around | space-between.
+
+<Playground>
+  <Container debug>
+    <Row justify="space-around">
+      <Col md={2} lg={3}>
+        Col-md-2 Col-lg-3
+      </Col>
+      <Col md={2} lg={3}>
+        Col-md-2 Col-lg-3
+      </Col>
+    </Row>
+    <Row justify={{ lg: 'flex-end', xl: 'center' }}>
+      <Col md={3} lg={4}>
+        Col-md-3 Col-lg-4
+      </Col>
+      <Col md={3} lg={4}>
+        Col-md-3 Col-lg-4
+      </Col>
+    </Row>
+    <Row justify={{ lg: 'flex-start', xl: 'space-between' }}>
+      <Col md={2} lg={3}>
+        Col-md-2 Col-lg-3
+      </Col>
+      <Col md={2} lg={3}>
+        Col-md-2 Col-lg-3
+      </Col>
+      <Col md={2} lg={3}>
+        Col-md-2 Col-lg-3
+      </Col>
+    </Row>
+  </Container>
+</Playground>
+
+## Reverse
+
+> Receives a **boolean** or **array,** if you pass just the boolean all breakpoints will be reversed.
+
+<Playground>
+  <Container debug>
+    <Row reverse>
+      <Col sm={2} lg={4}>
+        Col-sm-2 Col-lg-4
+      </Col>
+    </Row>
+    <Row reverse={['md', 'lg']}>
+      <Col sm={2} lg={4}>
+        Col-sm-2 Col-lg-4
+      </Col>
+    </Row>
+  </Container>
+</Playground>
+
+## Nesting
+
+> To nest your content with the default grid, add a new `<Row>` and set of Columns(Col).
+
+<Playground>
+  <Container debug>
+    <Row>
+      <Col sm={8} lg={12}>
+        Col-sm-8 Col-lg-12
+        <Row>
+          <Col sm={4} lg={6}>
+            Col-sm-4 Col-lg-6
+          </Col>
+          <Col sm={4} lg={6}>
+            Col-sm-4 Col-lg-6
+          </Col>
+        </Row>
+      </Col>
+    </Row>
+  </Container>
+</Playground>
