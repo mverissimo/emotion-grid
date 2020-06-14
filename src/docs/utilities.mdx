@@ -1,0 +1,80 @@
+---
+name: Utilities
+route: /utilities
+---
+
+import { Playground } from 'docz';
+import { ScreenClass, Hidden, Visible, Debugger } from '../';
+
+# Utilities
+
+For faster mobile-friendly and responsive development, the Emotion grid includes some utilities for styling, showing, hiding, and debugging.
+
+## Media
+
+Media query helper, this ensure you use the same grid breakpoints from config, we use **em** on _media query_, and you can check [here](https://zellwk.com/blog/media-query-units/) the why.
+
+```jsx
+import { css } from '@emotion/core';
+import { media } from '@mverissimoo/emotion-grid';
+
+const baseStyles = ({ theme }) => css`
+  ${media('lg')} {
+    // your code below
+  }
+`;
+```
+
+#### Output
+
+```css
+@media only screen and (min-width: 64em) {
+  // your code below
+}
+```
+
+## Screen Class
+
+Return a component with the current breakpoint.
+
+> Try to resize your window to see the change.
+
+<Playground>
+  <ScreenClass render={(screen) => <span>Current screen is {screen}</span>} />
+</Playground>
+
+## Visible
+
+Show an element only in a specific breakpoint.
+
+> Try to resize your window to see the change.
+
+<Playground>
+  <Visible md xl>
+    <span>Visible only in MD and XL</span>
+  </Visible>
+</Playground>
+
+## Hidden
+
+Hide an element only in a specific breakpoint.
+
+> Try to resize your window to see the change.
+
+<Playground>
+  <Hidden md>
+    <span>Hide only in MD</span>
+  </Hidden>
+</Playground>
+
+## Debugger
+
+Provide a way to visualize all grid columns without passing debug direct to the component and show the current breakpoint.
+
+> Try clicking on the button in the footer on the right
+
+```jsx
+process.env.NODE_ENV === 'development' && <Debugger />;
+```
+
+<Debugger />

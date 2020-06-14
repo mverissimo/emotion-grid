@@ -8,6 +8,7 @@ import { config, constants } from '../../config';
 import { media } from '../../utils';
 import { Types } from '../../types';
 
+import { Row } from '../Row';
 import { Col } from '../Col';
 
 const baseStyle = ({ theme }: Types.StyleProps) => css`
@@ -23,8 +24,8 @@ const baseStyle = ({ theme }: Types.StyleProps) => css`
   ${constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
-        padding-left: ${config(theme).padding[breakpoint]}rem;
-        padding-right: ${config(theme).padding[breakpoint]}rem;
+        padding-left: ${config(theme).padding[breakpoint] / 2}rem;
+        padding-right: ${config(theme).padding[breakpoint] / 2}rem;
       }
     `
   )}
@@ -39,7 +40,7 @@ const fluidStyle = ({
     (breakpoint) => css`
       ${media(breakpoint)} {
         ${typeof config(theme).container[breakpoint] === 'number'
-          ? `width: ${config(theme).container[breakpoint]}rem;`
+          ? `width: 100%; max-width: ${config(theme).container[breakpoint]}rem;`
           : `width: 100%;`}
       }
     `
@@ -51,13 +52,14 @@ const debugStyle = ({
 }: Types.StyleProps & Types.ContainerProps) =>
   debug &&
   css`
+    ${Row} {
+      background: rgba(${config(theme).debug.color}, 0.05);
+    }
+
     ${Col} {
       background: rgba(${config(theme).debug.color}, 0.05);
       border: 1px solid rgb(${config(theme).debug.color});
     }
-
-    background: rgba(${config(theme).debug.color}, 0.05);
-    border: 1px solid rgb(${config(theme).debug.color});
   `;
 
 const BaseContainer: FC<Types.ContainerProps> = ({ className, children }) => (

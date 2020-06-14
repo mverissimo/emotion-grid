@@ -6,73 +6,78 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
+}
+
+@media (min-width:1em) {
+  .grid-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:33.75em) {
+  .grid-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:1em) {
+  .grid-4 {
+    width: 100%;
+  }
+}
+
+@media (min-width:33.75em) {
+  .grid-4 {
+    width: 100%;
+  }
+}
+
+@media (min-width:48em) {
+  .grid-4 {
+    width: 100%;
+    max-width: 45rem;
+  }
+}
+
+@media (min-width:64em) {
+  .grid-4 {
+    width: 100%;
+    max-width: 60rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .grid-4 {
+    width: 100%;
+    max-width: 71.25rem;
+  }
+}
+
+.grid-4 .grid-3 {
   background: rgba(4,112,245,0.05);
-  border: 1px solid rgb(4,112,245);
-}
-
-@media (min-width:0em) {
-  .grid-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:33.75em) {
-  .grid-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-@media (min-width:48em) {
-  .grid-4 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:64em) {
-  .grid-4 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:71.25em) {
-  .grid-4 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media (min-width:0em) {
-  .grid-4 {
-    width: 100%;
-  }
-}
-
-@media (min-width:33.75em) {
-  .grid-4 {
-    width: 100%;
-  }
-}
-
-@media (min-width:48em) {
-  .grid-4 {
-    width: 100%;
-  }
-}
-
-@media (min-width:64em) {
-  .grid-4 {
-    width: 90rem;
-  }
-}
-
-@media (min-width:71.25em) {
-  .grid-4 {
-    width: 90rem;
-  }
 }
 
 .grid-4 .grid-1 {
@@ -91,17 +96,17 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-2 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-2 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -140,17 +145,17 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
@@ -196,42 +201,42 @@ exports[`Container should render with default styles 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:48em) {
   .grid-0 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:64em) {
   .grid-0 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:71.25em) {
   .grid-0 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
     width: 100%;
   }
@@ -246,18 +251,21 @@ exports[`Container should render with default styles 1`] = `
 @media (min-width:48em) {
   .grid-0 {
     width: 100%;
+    max-width: 45rem;
   }
 }
 
 @media (min-width:64em) {
   .grid-0 {
-    width: 90rem;
+    width: 100%;
+    max-width: 60rem;
   }
 }
 
 @media (min-width:71.25em) {
   .grid-0 {
-    width: 90rem;
+    width: 100%;
+    max-width: 71.25rem;
   }
 }
 
@@ -274,38 +282,38 @@ exports[`Container should render with fluid styles when passed the fluid prop 1`
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:48em) {
   .grid-0 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:64em) {
   .grid-0 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:71.25em) {
   .grid-0 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 

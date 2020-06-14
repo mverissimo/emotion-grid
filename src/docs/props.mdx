@@ -1,0 +1,64 @@
+---
+name: Table of props
+route: /props
+---
+
+# Table of Props
+
+## Container
+
+| prop     | type    | description                | default   |
+| -------- | ------- | -------------------------- | --------- |
+| fluid    | boolean | makes container full-width | false     |
+| debug    | boolean | enables debug              | false     |
+| children | node    | content                    | undefined |
+
+## Row
+
+| prop      | type             | description                     | default   |
+| --------- | ---------------- | ------------------------------- | --------- |
+| align     | string or object | align the content vertically    | undefined |
+| justify   | string or object | align the content horizontally  | undefined |
+| reverse   | number or array  | reverses the content of the row | false     |
+| noGutters | boolean          | remove columns gutter           | false     |
+| children  | node             | content                         | undefined |
+
+## Col
+
+| prop     | type             | description                                      | default   |
+| -------- | ---------------- | ------------------------------------------------ | --------- |
+| xs       | number or string | sets the number of columns only in the screen xs | undefined |
+| sm       | number or string | sets the number of columns only in the screen sm | undefined |
+| md       | number or string | sets the number of columns only in the screen md | undefined |
+| lg       | number or string | sets the number of columns only in the screen lg | undefined |
+| xl       | number or string | sets the number of columns only in the screen xl | undefined |
+| offset   | number or object | sets the number of the offset columns            | undefined |
+| children | node             | content                                          | undefined |
+
+## ScreenClass
+
+| prop   | type | description                                                                    |
+| ------ | ---- | ------------------------------------------------------------------------------ |
+| render | func | the function that will be rendered receiving the current screen as a parameter |
+
+## Visible
+
+| prop     | type    | description                            | default   |
+| -------- | ------- | -------------------------------------- | --------- |
+| xs       | boolean | show the content only in the screen xs | false     |
+| sm       | boolean | show the content only in the screen sm | false     |
+| md       | boolean | show the content only in the screen md | false     |
+| lg       | boolean | show the content only in the screen lg | false     |
+| xl       | boolean | show the content only in the screen xl | false     |
+| children | node    | content                                | undefined |
+
+## Hidden
+
+| prop     | type    | description                             | default   |
+| -------- | ------- | --------------------------------------- | --------- |
+| xs       | boolean | hiden the content only in the screen xs | false     |
+| sm       | boolean | hiden the content only in the screen sm | false     |
+| md       | boolean | hiden the content only in the screen md | false     |
+| lg       | boolean | hiden the content only in the screen lg | false     |
+| xl       | boolean | hiden the content only in the screen xl | false     |
+| children | node    | content                                 | undefined |

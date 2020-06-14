@@ -16,17 +16,17 @@ exports[`Row should render align styles when passed the align baseline prop as s
   align-items: baseline;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -72,17 +72,17 @@ exports[`Row should render align styles when passed the align center prop as str
   align-items: center;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -128,17 +128,17 @@ exports[`Row should render align styles when passed the align flex-end prop as s
   align-items: flex-end;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -184,17 +184,17 @@ exports[`Row should render align styles when passed the align flex-start prop as
   align-items: flex-start;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -236,17 +236,17 @@ exports[`Row should render align styles when passed the align prop as object 1`]
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -301,17 +301,17 @@ exports[`Row should render align styles when passed the align stretch prop as st
   align-items: stretch;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -353,17 +353,17 @@ exports[`Row should render justify styles when passed the align prop as object 1
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -418,17 +418,17 @@ exports[`Row should render justify styles when when passed the justify center pr
   justify-content: center;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -474,17 +474,17 @@ exports[`Row should render justify styles when when passed the justify flex-end 
   justify-content: flex-end;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -530,17 +530,17 @@ exports[`Row should render justify styles when when passed the justify flex-star
   justify-content: flex-start;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -586,17 +586,17 @@ exports[`Row should render justify styles when when passed the justify space-aro
   justify-content: space-around;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -642,17 +642,17 @@ exports[`Row should render justify styles when when passed the justify space-bet
   justify-content: space-between;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -694,17 +694,17 @@ exports[`Row should render reverse styles with breakpoint lg 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -729,7 +729,7 @@ exports[`Row should render reverse styles with breakpoint lg 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -786,17 +786,17 @@ exports[`Row should render reverse styles with breakpoint md 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -821,7 +821,7 @@ exports[`Row should render reverse styles with breakpoint md 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -878,17 +878,17 @@ exports[`Row should render reverse styles with breakpoint sm 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -913,7 +913,7 @@ exports[`Row should render reverse styles with breakpoint sm 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -970,17 +970,17 @@ exports[`Row should render reverse styles with breakpoint xl 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -1005,7 +1005,7 @@ exports[`Row should render reverse styles with breakpoint xl 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -1062,17 +1062,17 @@ exports[`Row should render reverse styles with breakpoint xs 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -1097,7 +1097,7 @@ exports[`Row should render reverse styles with breakpoint xs 1`] = `
   }
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
     -webkit-flex-direction: row-reverse;
     -ms-flex-direction: row-reverse;
@@ -1154,17 +1154,17 @@ exports[`Row should render with default styles 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -1206,17 +1206,17 @@ exports[`Row should render with noGutters styles when passed the noGutters prop 
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-2 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-2 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
@@ -1260,17 +1260,17 @@ exports[`Row should render with noGutters styles when passed the noGutters prop 
   box-sizing: border-box;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
   }
 }
 
@@ -1319,17 +1319,17 @@ exports[`Row should render with reverse styles when passed the reverse prop 1`] 
   flex-direction: row-reverse;
 }
 
-@media (min-width:0em) {
+@media (min-width:1em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
   .grid-0 {
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
   }
 }
 

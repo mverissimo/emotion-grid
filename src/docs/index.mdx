@@ -1,7 +1,41 @@
 ---
-name: Index
+name: Getting Started
+route: /
 ---
 
-# Init
+# Emotion grid
 
-# Docs
+A responsive (mobile-first) grid system built with emotion.
+
+## Installation
+
+Can you use **yarn** or **npm**.
+
+```bash
+$ yarn add emotion-grid
+```
+
+## Basic Usage
+
+You can create a basic grid system by using a single set of Row and Col grid assembly, all of the columns (Col) must be placed in Row.
+
+```jsx
+import { Container, Row, Col } from '@mverissimoo/emotion-grid';
+
+function Page() {
+  return (
+    <Container>
+      <Row>
+        <Col xs={4} md={6} xl={12}>
+          Col
+        </Col>
+        <Col xs={4} md={6} xl={12}>
+          Col
+        </Col>
+      </Row>
+    </Container>
+  );
+}
+
+export default Page;
+```
