@@ -5,13 +5,15 @@ A responsive (mobile-first) grid system built with emotion.
 ## Quick start
 
 ### Installation
+
 You can use **yarn** or **npm**.
 
 ```
-$ yarn add @mverissimoo/emotion-grid
+$ yarn add @emotion/core @mverissimoo/emotion-grid
 ```
 
 ### Usage
+
 ```jsx
 import { Container, Row, Col } from '@mverissimoo/emotion-grid';
 
@@ -34,11 +36,13 @@ export default Page;
 ```
 
 ## Development
+
 ```bash
 $ yarn docz:dev
 ```
 
 ## Looking for docs
+
 Can you check [here](https://emotion-grid.netlify.app/), guides and API reference.
 
 ## Built with
@@ -49,4 +53,5 @@ Can you check [here](https://emotion-grid.netlify.app/), guides and API referenc
 - [Preconstruct](https://preconstruct.tools/)
 
 ## Contributing
+
 Feel like contributing? That's awesome! We have a [contributing guide](https://google.com/) to help guide you.
