@@ -8,7 +8,7 @@ A responsive (mobile-first) grid system built with emotion.
 You can use **yarn** or **npm**.
 
 ```
-$ yarn add emotion-grid
+$ yarn add @mverissimoo/emotion-grid
 ```
 
 ### Usage
