@@ -103,13 +103,12 @@
     "typescript": "^3.9.5"
   },
   "peerDependencies": {
-    "@emotion/core": "^10.0.28"
-  },
-  "dependencies": {
+    "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@emotion/styled-base": "^10.0.31",
     "emotion-theming": "^10.0.27",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  }
+  },
+  "dependencies": {}
 }
