@@ -54,24 +54,23 @@ const sizeStyle = (props: Types.StyleProps & Types.ColProps) => {
 
 const offsetStyle = ({ theme, offset }: Types.StyleProps & Types.ColProps) =>
   offset &&
-  (typeof offset === 'object'
-    ? constants.BREAKPOINTS.map(
-        (breakpoint) =>
-          offset[breakpoint] &&
-          css`
-            ${media(breakpoint)} {
-              margin-left: ${offset[breakpoint] > 0
-                ? (offset[breakpoint] / config(theme).columns[breakpoint]) * 100
-                : 0}%;
-            }
-          `
-      )
-    : css`
-        margin-left: ${(offset / config(theme).columns['xs']) * 100}%;
-      `);
+  typeof offset === 'object' &&
+  constants.BREAKPOINTS.map(
+    (breakpoint) =>
+      offset[breakpoint] &&
+      css`
+        ${media(breakpoint)} {
+          margin-left: ${offset[breakpoint] > 0
+            ? (offset[breakpoint] / config(theme).columns[breakpoint]) * 100
+            : 0}%;
+        }
+      `
+  );
 
-const BaseCol: FC<Types.ColProps> = ({ className, children }) => (
-  <div className={className}>{children}</div>
+const BaseCol: FC<Types.ColProps> = ({ style, className, children }) => (
+  <div style={style} className={className}>
+    {children}
+  </div>
 );
 
 export const Col = styled(BaseCol)<Types.ColProps>(
