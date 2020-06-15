@@ -85,8 +85,10 @@ const noGutterStyle = ({ noGutters }: Types.RowProps) =>
     }
   `;
 
-const BaseRow: FC<Types.RowProps> = ({ className, children }) => (
-  <div className={className}>{children}</div>
+const BaseRow: FC<Types.RowProps> = ({ style, className, children }) => (
+  <div style={style} className={className}>
+    {children}
+  </div>
 );
 
 export const Row = styled(BaseRow)<Types.RowProps>(

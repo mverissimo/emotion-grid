@@ -3,12 +3,13 @@ name: Usage
 route: /usage
 ---
 
+import { Fragment } from 'react';
 import { Playground } from 'docz';
 import { Container, Row, Col } from '../';
 
-## Basic grid
+## Responsive
 
-You can create a basic grid system by using a single set of `Row` and `Col` grid assembly, all of the columns (Col) must be placed in `Row`.
+You can create a responsive grid system by using a single set of `Row` and `Col` grid assembly, all of the columns (Col) must be placed in `Row`.
 
 <Playground>
   <Container debug>
@@ -42,20 +43,17 @@ You can create a basic grid system by using a single set of `Row` and `Col` grid
 
 ## Column offset
 
-You can use the prop **offset** as a **number** or **object**.
-
-> If choice number as a prop, the number of columns of the screen [**xs**](/api) will be used as the base.
-
 <Playground>
   <Container debug>
     <Row>
-      <Col md={4} offset={1}>offset-1</Col>
+      {Array.from(Array(12), (v, i) => {
+        return (
+          <Col key={i} offset={{ lg: 11 - i }} lg={i + 1}>
+            <br />
+          </Col>
+        );
+      })}
     </Row>
-    <Row>
-      <Col md={4} lg={6} offset={{ md: 4, lg: 3 }}>offset-md-4 offset-lg-3</Col>
-      <Col md={6} lg={9} offset={{ md: 4, lg: 3  }}>offset-md-4 offset-lg-3</Col>
-    </Row>
-
   </Container>
 </Playground>
 
@@ -70,27 +68,29 @@ Align and justify working with flexbox and both accept a **string** or **object.
 <Playground>
   <Container debug>
     <Row align="flex-start">
-      <Col sm={4} md={6}>
-        Col-sm-4 Col-md-6
+      <Col sm={4} md={6} style={{ height: '100px' }}>
+        start
       </Col>
       <Col sm={4} md={6}>
-        Col-sm-4 Col-md-6
+        start
       </Col>
     </Row>
+    <br />
     <Row align={{ lg: 'flex-end', xl: 'center' }}>
       <Col sm={4} md={6}>
-        Col-sm-4 Col-md-6
+        lg-end xl-center
       </Col>
-      <Col sm={4} md={6}>
-        Col-sm-4 Col-md-6
+      <Col sm={4} md={6} style={{ height: '100px' }}>
+        lg-end xl-center
       </Col>
     </Row>
+    <br />
     <Row align={{ lg: 'center', xl: 'flex-end' }}>
-      <Col sm={4} md={6}>
-        Col-sm-4 Col-md-6
+      <Col sm={4} md={6} style={{ height: '100px' }}>
+        lg-center xl-end
       </Col>
       <Col sm={4} md={6}>
-        Col-sm-4 Col-md-6
+        lg-center xl-end
       </Col>
     </Row>
   </Container>
@@ -103,30 +103,38 @@ Align and justify working with flexbox and both accept a **string** or **object.
 <Playground>
   <Container debug>
     <Row justify="space-around">
-      <Col md={2} lg={3}>
-        Col-md-2 Col-lg-3
+      <Col md={3} lg={3}>
+        space around
       </Col>
-      <Col md={2} lg={3}>
-        Col-md-2 Col-lg-3
+      <Col md={3} lg={3}>
+        space around
+      </Col>
+      <Col md={3} lg={3}>
+        space around
       </Col>
     </Row>
+    <br />
     <Row justify={{ lg: 'flex-end', xl: 'center' }}>
-      <Col md={3} lg={4}>
-        Col-md-3 Col-lg-4
+      <Col md={3} lg={3}>
+        lg-end xl-center
       </Col>
-      <Col md={3} lg={4}>
-        Col-md-3 Col-lg-4
+      <Col md={3} lg={3}>
+        lg-end xl-center
+      </Col>
+      <Col md={3} lg={3}>
+        lg-end xl-center
       </Col>
     </Row>
+    <br />
     <Row justify={{ lg: 'flex-start', xl: 'space-between' }}>
-      <Col md={2} lg={3}>
-        Col-md-2 Col-lg-3
+      <Col md={3} lg={3}>
+        lg start xl-between
       </Col>
-      <Col md={2} lg={3}>
-        Col-md-2 Col-lg-3
+      <Col md={3} lg={3}>
+        lg start xl-between
       </Col>
-      <Col md={2} lg={3}>
-        Col-md-2 Col-lg-3
+      <Col md={3} lg={3}>
+        lg start xl-between
       </Col>
     </Row>
   </Container>
