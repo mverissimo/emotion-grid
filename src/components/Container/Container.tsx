@@ -62,8 +62,14 @@ const debugStyle = ({
     }
   `;
 
-const BaseContainer: FC<Types.ContainerProps> = ({ className, children }) => (
-  <div className={className}>{children}</div>
+const BaseContainer: FC<Types.ContainerProps> = ({
+  style,
+  className,
+  children,
+}) => (
+  <div style={style} className={className}>
+    {children}
+  </div>
 );
 
 export const Container = styled(BaseContainer)<Types.ContainerProps>(

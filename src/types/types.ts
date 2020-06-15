@@ -1,4 +1,4 @@
-import { ReactNode, ReactElement } from 'react';
+import { ReactNode, ReactElement, CSSProperties } from 'react';
 
 export type Breakpoints = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
@@ -41,6 +41,7 @@ export interface JustifyProps {
 export interface ContainerProps {
   fluid?: boolean;
   debug?: boolean;
+  style?: CSSProperties;
   className?: string;
   children: ReactNode;
 }
@@ -50,6 +51,7 @@ export interface RowProps {
   justify?: JustifyProps | Justify;
   reverse?: Array<Breakpoints> | boolean;
   noGutters?: boolean;
+  style?: CSSProperties;
   className?: string;
   children: ReactNode;
 }
@@ -60,7 +62,8 @@ export interface ColProps {
   md?: number;
   lg?: number;
   xl?: number;
-  offset?: Record<Breakpoints, number> | number;
+  offset?: Record<Breakpoints, number>;
+  style?: CSSProperties;
   className?: string;
   children: ReactNode;
 }

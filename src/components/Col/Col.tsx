@@ -67,8 +67,10 @@ const offsetStyle = ({ theme, offset }: Types.StyleProps & Types.ColProps) =>
       `
   );
 
-const BaseCol: FC<Types.ColProps> = ({ className, children }) => (
-  <div className={className}>{children}</div>
+const BaseCol: FC<Types.ColProps> = ({ style, className, children }) => (
+  <div style={style} className={className}>
+    {children}
+  </div>
 );
 
 export const Col = styled(BaseCol)<Types.ColProps>(
