@@ -43,7 +43,7 @@ $ yarn docz:dev
 
 ## Looking for docs
 
-Can you check [here](https://emotion-grid.netlify.app/), guides and API reference.
+You can check [here](https://emotion-grid.netlify.app/), guides and API reference.
 
 ## Built with
 
