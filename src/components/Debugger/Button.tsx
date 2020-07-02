@@ -33,7 +33,7 @@ const baseStyle = ({ theme, isActive }: Types.StyleProps & ButtonProps) => css`
   padding: 0;
   box-sizing: border-box;
 
-  color: ${isActive ? `rgb(${config(theme).debug.color})` : '#fff'};
+  color: ${isActive ? `${config(theme).debug.color}` : '#fff'};
   font-size: 14px;
   font-weight: bold;
 
@@ -46,8 +46,8 @@ const baseStyle = ({ theme, isActive }: Types.StyleProps & ButtonProps) => css`
   transition: background, color 0.2s;
 
   background: ${isActive
-    ? `rgba(${config(theme).debug.color}, 0.25)`
-    : `rgb(${config(theme).debug.color})`};
+    ? `${config(theme).debug.color}3D`
+    : `${config(theme).debug.color}`};
   border: 0;
   border-radius: 50%;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);

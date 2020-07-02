@@ -14,6 +14,7 @@ import { Col } from '../Col';
 const baseStyle = ({ theme }: Types.StyleProps) => css`
   label: container;
 
+  width: 100%;
   max-width: 100%;
 
   margin-right: auto;
@@ -39,9 +40,10 @@ const fluidStyle = ({
   constants.BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
-        ${typeof config(theme).container[breakpoint] === 'number'
-          ? `width: 100%; max-width: ${config(theme).container[breakpoint]}rem;`
-          : `width: 100%;`}
+        ${typeof config(theme).container[breakpoint] === 'number' &&
+        `
+          max-width: ${config(theme).container[breakpoint]}rem;
+        `}
       }
     `
   );
@@ -53,12 +55,12 @@ const debugStyle = ({
   debug &&
   css`
     ${Row} {
-      background: rgba(${config(theme).debug.color}, 0.05);
+      background: ${config(theme).debug.color}0D;
     }
 
     ${Col} {
-      background: rgba(${config(theme).debug.color}, 0.05);
-      border: 1px solid rgb(${config(theme).debug.color});
+      background: ${config(theme).debug.color}0D;
+      border: 1px solid ${config(theme).debug.color};
     }
   `;
 

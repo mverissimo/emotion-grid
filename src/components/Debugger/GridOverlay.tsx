@@ -42,7 +42,7 @@ const baseStyle = ({
 
   ${Row} {
     height: 100%;
-    background: rgba(${config(theme).debug.color}, 0.05);
+    background: ${config(theme).debug.color}0D;
   }
 
   ${Col} {
@@ -65,7 +65,7 @@ const baseStyle = ({
         width: 100%;
         height: 100%;
 
-        background: rgba(${config(theme).debug.color}, 0.05);
+        background: ${config(theme).debug.color}0D;
       }
     }
   }

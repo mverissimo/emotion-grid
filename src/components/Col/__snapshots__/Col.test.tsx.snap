@@ -144,7 +144,7 @@ exports[`Col should render with offset styles 1`] = `
 </div>
 `;
 
-exports[`Col should render with offset styles for media [object Object] 1`] = `
+exports[`Col should render with offset styles for media { xs: 1, sm: 2, md: 3, lg: 4, xl: 5 } 1`] = `
 .grid-0 {
   position: relative;
   -webkit-flex-basis: 0;
@@ -231,7 +231,7 @@ exports[`Col should render with offset styles for media [object Object] 1`] = `
 </div>
 `;
 
-exports[`Col should render with width styles for media [object Object] 1`] = `
+exports[`Col should render with width styles for media { xs: 1, sm: 2, md: 3, lg: 4, xl: 5 } 1`] = `
 .grid-0 {
   position: relative;
   -webkit-flex-basis: 0;
