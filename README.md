@@ -8,8 +8,14 @@ A responsive (mobile-first) grid system built with emotion.
 
 You can use **yarn** or **npm**.
 
+> Emotion is used has peerDependencie, so you need install to.
+
+```bash
+$ yarn add @emotion/core @emotion/styled emotion-theming
 ```
-$ yarn add @emotion/core @mverissimoo/emotion-grid
+
+```bash
+$ yarn add @mverissimoo/emotion-grid
 ```
 
 ### Usage
