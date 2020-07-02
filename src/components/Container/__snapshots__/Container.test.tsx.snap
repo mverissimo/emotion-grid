@@ -2,6 +2,7 @@
 
 exports[`Container should render with debug styles when passed the debug prop 1`] = `
 .grid-4 {
+  width: 100%;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -43,46 +44,31 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   }
 }
 
-@media (min-width:1em) {
-  .grid-4 {
-    width: 100%;
-  }
-}
-
-@media (min-width:33.75em) {
-  .grid-4 {
-    width: 100%;
-  }
-}
-
 @media (min-width:48em) {
   .grid-4 {
-    width: 100%;
     max-width: 45rem;
   }
 }
 
 @media (min-width:64em) {
   .grid-4 {
-    width: 100%;
     max-width: 60rem;
   }
 }
 
 @media (min-width:71.25em) {
   .grid-4 {
-    width: 100%;
     max-width: 71.25rem;
   }
 }
 
 .grid-4 .grid-3 {
-  background: rgba(4,112,245,0.05);
+  background: #0470F50D;
 }
 
 .grid-4 .grid-1 {
-  background: rgba(4,112,245,0.05);
-  border: 1px solid rgb(4,112,245);
+  background: #0470F50D;
+  border: 1px solid #0470F5;
 }
 
 .grid-2 {
@@ -197,6 +183,7 @@ exports[`Container should render with debug styles when passed the debug prop 1`
 
 exports[`Container should render with default styles 1`] = `
 .grid-0 {
+  width: 100%;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -238,35 +225,20 @@ exports[`Container should render with default styles 1`] = `
   }
 }
 
-@media (min-width:1em) {
-  .grid-0 {
-    width: 100%;
-  }
-}
-
-@media (min-width:33.75em) {
-  .grid-0 {
-    width: 100%;
-  }
-}
-
 @media (min-width:48em) {
   .grid-0 {
-    width: 100%;
     max-width: 45rem;
   }
 }
 
 @media (min-width:64em) {
   .grid-0 {
-    width: 100%;
     max-width: 60rem;
   }
 }
 
 @media (min-width:71.25em) {
   .grid-0 {
-    width: 100%;
     max-width: 71.25rem;
   }
 }
@@ -280,6 +252,7 @@ exports[`Container should render with default styles 1`] = `
 
 exports[`Container should render with fluid styles when passed the fluid prop 1`] = `
 .grid-0 {
+  width: 100%;
   max-width: 100%;
   margin-right: auto;
   margin-left: auto;

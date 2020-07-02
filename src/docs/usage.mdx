@@ -180,3 +180,34 @@ Align and justify working with flexbox and both accept a **string** or **object.
     </Row>
   </Container>
 </Playground>
+
+## Remove gutters
+
+Remove gutters from columns
+
+<Playground>
+  <Container debug>
+    <Row noGutters>
+      <Col sm={4} md={4} lg={6}>
+        sm-4 md-4 lg-6
+      </Col>
+      <Col sm={4} md={8} lg={6}>
+        sm-4 md-8 lg-6
+      </Col>
+    </Row>
+    <Row noGutters>
+      <Col sm={2} md={3} lg={4}>
+        sm-2 md-3 lg-4
+      </Col>
+      <Col sm={2} md={3} lg={2}>
+        sm-2 md-3 lg-2
+      </Col>
+      <Col sm={2} md={3} lg={4}>
+        sm-2 md-3 lg-4
+      </Col>
+      <Col sm={2} md={3} lg={2}>
+        sm-2 md-3 lg-2
+      </Col>
+    </Row>
+  </Container>
+</Playground>

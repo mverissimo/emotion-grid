@@ -45,6 +45,6 @@ export const DEFAULT_CONFIG: Types.Grid = {
     xl: 71.25,
   },
   debug: {
-    color: '4, 112, 245',
+    color: '#0470F5',
   },
 };
