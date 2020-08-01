@@ -99,7 +99,7 @@
     "pretty-quick": "2.0.1",
     "semantic-release": "17.0.8",
     "stylelint": "13.6.1",
-    "ts-jest": "26.1.0",
+    "ts-jest": "26.1.4",
     "typescript": "3.9.7"
   },
   "peerDependencies": {
