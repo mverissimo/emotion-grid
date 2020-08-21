@@ -2793,10 +2793,10 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
 
-"@preconstruct/cli@1.1.22":
-  version "1.1.22"
-  resolved "https://registry.yarnpkg.com/@preconstruct/cli/-/cli-1.1.22.tgz#8e6796f77668c6bbf18cce2e097216282e998b7f"
-  integrity sha512-wnaaHnc04MQk38RRh0XzQTH3dLQin+MdjN+71fytg+V5fnYXlgRO+hvs+TZuxPDE+wwdb/USpyqyggP8fVFSdA==
+"@preconstruct/cli@1.1.24":
+  version "1.1.24"
+  resolved "https://registry.yarnpkg.com/@preconstruct/cli/-/cli-1.1.24.tgz#7935ba4a37be5a65bc2486fa7345109ef642226b"
+  integrity sha512-xD2cbGcF9iqzjDMWRR3I+EGmFXT8Z1cLpmGW/P7Fv/SEhKyBYMmJGkcHpQyyLsvnyD6EuVLd4VUbTIK4FKDI8g==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.7.7"
@@ -2807,7 +2807,6 @@
     "@rollup/plugin-json" "^4.0.2"
     "@rollup/plugin-node-resolve" "^7.1.1"
     "@rollup/plugin-replace" "^2.3.1"
-    "@rollup/pluginutils" "^3.0.8"
     builtin-modules "^3.1.0"
     chalk "^2.4.2"
     dataloader "^1.4.0"
