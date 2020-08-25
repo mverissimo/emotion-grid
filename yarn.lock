@@ -2793,10 +2793,10 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
 
-"@preconstruct/cli@1.1.24":
-  version "1.1.24"
-  resolved "https://registry.yarnpkg.com/@preconstruct/cli/-/cli-1.1.24.tgz#7935ba4a37be5a65bc2486fa7345109ef642226b"
-  integrity sha512-xD2cbGcF9iqzjDMWRR3I+EGmFXT8Z1cLpmGW/P7Fv/SEhKyBYMmJGkcHpQyyLsvnyD6EuVLd4VUbTIK4FKDI8g==
+"@preconstruct/cli@1.1.25":
+  version "1.1.25"
+  resolved "https://registry.yarnpkg.com/@preconstruct/cli/-/cli-1.1.25.tgz#b41ea7e5d374175af1ec76bb9fa46dcd9fb9a054"
+  integrity sha512-/QrRuFrz1Y0I0sSoemuajuIdxEFv+f+wfTgOEeg7/ZkolGsYX5KGNMV4f+FOt+eU3wwJyKv9TJQVEgitQFwNbA==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.7.7"
