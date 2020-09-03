@@ -72,7 +72,7 @@
     "@semantic-release/npm": "7.0.5",
     "@semantic-release/release-notes-generator": "9.0.1",
     "@testing-library/jest-dom": "5.11.4",
-    "@testing-library/react": "11.0.0",
+    "@testing-library/react": "11.0.1",
     "@types/css-mediaquery": "0.1.0",
     "@types/jest": "26.0.13",
     "@typescript-eslint/eslint-plugin": "4.0.1",
