@@ -95,7 +95,7 @@
     "jest": "26.4.2",
     "jest-emotion": "10.0.32",
     "lint-staged": "10.3.0",
-    "prettier": "2.1.1",
+    "prettier": "2.1.2",
     "pretty-quick": "3.0.2",
     "semantic-release": "17.1.1",
     "stylelint": "13.7.1",
