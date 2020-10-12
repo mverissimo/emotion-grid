@@ -66,7 +66,7 @@
     "@babel/preset-typescript": "7.10.4",
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
-    "@preconstruct/cli": "1.1.27",
+    "@preconstruct/cli": "1.1.29",
     "@semantic-release/commit-analyzer": "8.0.1",
     "@semantic-release/github": "7.1.1",
     "@semantic-release/npm": "7.0.6",
