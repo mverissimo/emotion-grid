@@ -2918,10 +2918,10 @@
     native-url "^0.2.6"
     schema-utils "^2.6.5"
 
-"@preconstruct/cli@1.1.33":
-  version "1.1.33"
-  resolved "https://registry.yarnpkg.com/@preconstruct/cli/-/cli-1.1.33.tgz#8bae3547cad678658d21591c7b514bceaf298ca9"
-  integrity sha512-ZW5mAFwIDm5EcZzxcgTnd+W0LN8VB8zCVvwTqNG1pDKgol+9Uia+pi3GvP0JYkECl8VBHh391ZrI+SdhqjGK7w==
+"@preconstruct/cli@1.1.34":
+  version "1.1.34"
+  resolved "https://registry.yarnpkg.com/@preconstruct/cli/-/cli-1.1.34.tgz#092416a936c4915777fa4560c2bcb16fb1f274cc"
+  integrity sha512-yrKUxDzHskWqcyLqhUFQpxkvKo+xnpkMmXso0c/u6AKn9dvTSbcBx7fdcMshDk5tzW1nR+M/xn0Eb+CtLcGT7w==
   dependencies:
     "@babel/code-frame" "^7.5.5"
     "@babel/core" "^7.7.7"
