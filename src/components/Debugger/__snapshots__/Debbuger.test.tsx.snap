@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Debugger should render with current screen %s 1`] = `
-.grid-6 {
+.grid-0 {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,30 +15,30 @@ exports[`Debugger should render with current screen %s 1`] = `
   transform-origin: 50% 0%;
 }
 
-.grid-6 .grid-5 {
+.grid-0 .grid-3 {
   height: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.grid-6 .grid-3 {
+.grid-0 .grid-5 {
   height: 100%;
   background: #0470F50D;
 }
 
-.grid-6 .grid-1 {
+.grid-0 .grid-7 {
   height: 100%;
 }
 
-.grid-6 .grid-1 > div {
+.grid-0 .grid-7>div {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.grid-6 .grid-1 > div::before,
-.grid-6 .grid-1 > div::after {
+.grid-0 .grid-7>div::before,
+.grid-0 .grid-7>div::after {
   content: '';
   position: absolute;
   top: 0;
@@ -48,7 +48,7 @@ exports[`Debugger should render with current screen %s 1`] = `
   background: #0470F50D;
 }
 
-.grid-4 {
+.grid-2 {
   width: 100%;
   max-width: 100%;
   margin-right: auto;
@@ -57,59 +57,59 @@ exports[`Debugger should render with current screen %s 1`] = `
 }
 
 @media (min-width:1em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:48em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:64em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:71.25em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:48em) {
-  .grid-4 {
+  .grid-2 {
     max-width: 45rem;
   }
 }
 
 @media (min-width:64em) {
-  .grid-4 {
+  .grid-2 {
     max-width: 60rem;
   }
 }
 
 @media (min-width:71.25em) {
-  .grid-4 {
+  .grid-2 {
     max-width: 71.25rem;
   }
 }
 
-.grid-2 {
+.grid-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -121,41 +121,41 @@ exports[`Debugger should render with current screen %s 1`] = `
 }
 
 @media (min-width:1em) {
-  .grid-2 {
+  .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
-  .grid-2 {
+  .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:48em) {
-  .grid-2 {
+  .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:64em) {
-  .grid-2 {
+  .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width:71.25em) {
-  .grid-2 {
+  .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-.grid-0 {
+.grid-6 {
   position: relative;
   -webkit-flex-basis: 0;
   -ms-flex-preferred-size: 0;
@@ -170,51 +170,254 @@ exports[`Debugger should render with current screen %s 1`] = `
 }
 
 @media (min-width:1em) {
-  .grid-0 {
+  .grid-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
-  .grid-0 {
+  .grid-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:48em) {
-  .grid-0 {
+  .grid-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:64em) {
-  .grid-0 {
+  .grid-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:71.25em) {
-  .grid-0 {
+  .grid-6 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+.emotion-0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.emotion-0 .emotion-3 {
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.emotion-0 .emotion-5 {
+  height: 100%;
+  background: #0470F50D;
+}
+
+.emotion-0 .emotion-7 {
+  height: 100%;
+}
+
+.emotion-0 .emotion-7>div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0 .emotion-7>div::before,
+.emotion-0 .emotion-7>div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0470F50D;
+}
+
+.emotion-2 {
+  width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width:1em) {
+  .emotion-2 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:33.75em) {
+  .emotion-2 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-2 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-2 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-2 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-2 {
+    max-width: 45rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-2 {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-2 {
+    max-width: 71.25rem;
+  }
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+@media (min-width:1em) {
+  .emotion-4 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:33.75em) {
+  .emotion-4 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-4 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-4 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-4 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+.emotion-6 {
+  position: relative;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width:1em) {
+  .emotion-6 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:33.75em) {
+  .emotion-6 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-6 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-6 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 <div
-  class="grid-6 grid-7"
+  class="emotion-0 emotion-1"
 >
   <div
-    class="grid-4 grid-5"
+    class="emotion-2 emotion-3"
   >
     <div
-      class="grid-2 grid-3"
+      class="emotion-4 emotion-5"
     >
       <div
-        class="grid-0 grid-1"
+        class="emotion-6 emotion-7"
       >
         <div />
       </div>

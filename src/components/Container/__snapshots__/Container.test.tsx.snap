@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Container should render with debug styles when passed the debug prop 1`] = `
-.grid-4 {
+.grid-0 {
   width: 100%;
   max-width: 100%;
   margin-right: auto;
@@ -10,63 +10,63 @@ exports[`Container should render with debug styles when passed the debug prop 1`
 }
 
 @media (min-width:1em) {
-  .grid-4 {
+  .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
-  .grid-4 {
+  .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:48em) {
-  .grid-4 {
+  .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:64em) {
-  .grid-4 {
+  .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:71.25em) {
-  .grid-4 {
+  .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:48em) {
-  .grid-4 {
+  .grid-0 {
     max-width: 45rem;
   }
 }
 
 @media (min-width:64em) {
-  .grid-4 {
+  .grid-0 {
     max-width: 60rem;
   }
 }
 
 @media (min-width:71.25em) {
-  .grid-4 {
+  .grid-0 {
     max-width: 71.25rem;
   }
 }
 
-.grid-4 .grid-3 {
+.grid-0 .grid-3 {
   background: #0470F50D;
 }
 
-.grid-4 .grid-1 {
+.grid-0 .grid-5 {
   background: #0470F50D;
   border: 1px solid #0470F5;
 }
@@ -117,7 +117,7 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   }
 }
 
-.grid-0 {
+.grid-4 {
   position: relative;
   -webkit-flex-basis: 0;
   -ms-flex-preferred-size: 0;
@@ -132,48 +132,213 @@ exports[`Container should render with debug styles when passed the debug prop 1`
 }
 
 @media (min-width:1em) {
-  .grid-0 {
+  .grid-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:33.75em) {
-  .grid-0 {
+  .grid-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:48em) {
-  .grid-0 {
+  .grid-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:64em) {
-  .grid-0 {
+  .grid-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width:71.25em) {
-  .grid-0 {
+  .grid-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+.emotion-0 {
+  width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width:1em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:33.75em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-0 {
+    max-width: 45rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-0 {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-0 {
+    max-width: 71.25rem;
+  }
+}
+
+.emotion-0 .emotion-3 {
+  background: #0470F50D;
+}
+
+.emotion-0 .emotion-5 {
+  background: #0470F50D;
+  border: 1px solid #0470F5;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+@media (min-width:1em) {
+  .emotion-2 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:33.75em) {
+  .emotion-2 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-2 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-2 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-2 {
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem;
+  }
+}
+
+.emotion-4 {
+  position: relative;
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width:1em) {
+  .emotion-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:33.75em) {
+  .emotion-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-4 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 <div
-  class="grid-4 grid-5"
+  class="emotion-0 emotion-1"
 >
   <div
-    class="grid-2 grid-3"
+    class="emotion-2 emotion-3"
   >
     <div
-      class="grid-0 grid-1"
+      class="emotion-4 emotion-5"
     >
       Col
     </div>
@@ -243,8 +408,69 @@ exports[`Container should render with default styles 1`] = `
   }
 }
 
+.emotion-0 {
+  width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width:1em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:33.75em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-0 {
+    max-width: 45rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-0 {
+    max-width: 60rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-0 {
+    max-width: 71.25rem;
+  }
+}
+
 <div
-  class="grid-0 grid-1"
+  class="emotion-0 emotion-1"
 >
   Container
 </div>
@@ -294,8 +520,51 @@ exports[`Container should render with fluid styles when passed the fluid prop 1`
   }
 }
 
+.emotion-0 {
+  width: 100%;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+@media (min-width:1em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:33.75em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:48em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:64em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+@media (min-width:71.25em) {
+  .emotion-0 {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
 <div
-  class="grid-0 grid-1"
+  class="emotion-0 emotion-1"
 >
   Container fluid
 </div>

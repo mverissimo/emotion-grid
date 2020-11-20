@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { withTheme } from 'emotion-theming';
+import { withTheme } from '@emotion/react';
 
 import { Types } from '../../types';
 import { getBreakpoint } from '../../utils/getBreakpoint';

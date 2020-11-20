@@ -31,14 +31,61 @@ exports[`Grid Overlay should render with default styles 1`] = `
   height: 100%;
 }
 
-.grid-0 .e12n51c30 > div {
+.grid-0 .e12n51c30>div {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.grid-0 .e12n51c30 > div::before,
-.grid-0 .e12n51c30 > div::after {
+.grid-0 .e12n51c30>div::before,
+.grid-0 .e12n51c30>div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0470F50D;
+}
+
+.emotion-0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.emotion-0 .e1g9m8r10 {
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.emotion-0 .elhoft0 {
+  height: 100%;
+  background: #0470F50D;
+}
+
+.emotion-0 .e12n51c30 {
+  height: 100%;
+}
+
+.emotion-0 .e12n51c30>div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0 .e12n51c30>div::before,
+.emotion-0 .e12n51c30>div::after {
   content: '';
   position: absolute;
   top: 0;
@@ -49,7 +96,7 @@ exports[`Grid Overlay should render with default styles 1`] = `
 }
 
 <div
-  class="grid-0 grid-1"
+  class="emotion-0 emotion-1"
 />
 `;
 
@@ -84,14 +131,61 @@ exports[`Grid Overlay should render with visible styles when passed the visible 
   height: 100%;
 }
 
-.grid-0 .e12n51c30 > div {
+.grid-0 .e12n51c30>div {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.grid-0 .e12n51c30 > div::before,
-.grid-0 .e12n51c30 > div::after {
+.grid-0 .e12n51c30>div::before,
+.grid-0 .e12n51c30>div::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0470F50D;
+}
+
+.emotion-0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+
+.emotion-0 .e1g9m8r10 {
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.emotion-0 .elhoft0 {
+  height: 100%;
+  background: #0470F50D;
+}
+
+.emotion-0 .e12n51c30 {
+  height: 100%;
+}
+
+.emotion-0 .e12n51c30>div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0 .e12n51c30>div::before,
+.emotion-0 .e12n51c30>div::after {
   content: '';
   position: absolute;
   top: 0;
@@ -102,6 +196,6 @@ exports[`Grid Overlay should render with visible styles when passed the visible 
 }
 
 <div
-  class="grid-0 grid-1"
+  class="emotion-0 emotion-1"
 />
 `;

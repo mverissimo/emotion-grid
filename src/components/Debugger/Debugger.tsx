@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import { withTheme } from 'emotion-theming';
+import { withTheme } from '@emotion/react';
 
 import { Container } from '../Container';
 import { Row } from '../Row';
