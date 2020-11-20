@@ -1,4 +1,4 @@
-import { createSerializer } from 'jest-emotion';
+import { createSerializer } from '@emotion/jest';
 
 expect.addSnapshotSerializer(
   createSerializer({

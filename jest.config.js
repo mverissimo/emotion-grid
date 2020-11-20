@@ -12,6 +12,7 @@ module.exports = {
     '!**/node_modules/**',
   ],
   moduleDirectories: ['node_modules', 'src'],
+  snapshotSerializers: ['@emotion/jest/serializer'],
   transform: {
     '^.+\\.(js|jsx)$': 'babel-jest',
     '^.+\\.(ts|tsx)$': 'ts-jest',
@@ -20,7 +21,7 @@ module.exports = {
   globals: {
     'ts-jest': {
       babelConfig: true,
-      tsConfig: {
+      tsconfig: {
         jsx: 'react',
       },
     },

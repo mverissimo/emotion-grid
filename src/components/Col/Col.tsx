@@ -1,8 +1,7 @@
-/** @jsx jsx */
-import { FC } from 'react';
+import React, { FC } from 'react';
 
 import styled from '@emotion/styled';
-import { jsx, css } from '@emotion/core';
+import { css } from '@emotion/react';
 
 import { config, constants } from '../../config';
 import { media } from '../../utils';
