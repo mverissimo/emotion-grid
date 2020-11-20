@@ -4,7 +4,6 @@
     [
       "@emotion/babel-preset-css-prop",
       {
-        "autoLabel": false,
         "labelFormat": "[filename]--[local]"
       }
     ]
@@ -20,12 +19,7 @@
             }
           }
         ],
-        [
-          "@emotion/babel-preset-css-prop",
-          {
-            "autoLabel": false
-          }
-        ]
+        "@emotion/babel-preset-css-prop"
       ]
     }
   }
