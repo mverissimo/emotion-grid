@@ -11,11 +11,11 @@ You can use **yarn** or **npm**.
 > Emotion is used has peerDependencie, so you need install to.
 
 ```bash
-$ yarn add @emotion/core @emotion/styled emotion-theming
+yarn add @emotion/react @emotion/styled
 ```
 
 ```bash
-$ yarn add @mverissimoo/emotion-grid
+yarn add @mverissimoo/emotion-grid
 ```
 
 ### Usage
@@ -44,7 +44,7 @@ export default Page;
 ## Development
 
 ```bash
-$ yarn docz:dev
+yarn docz:dev
 ```
 
 ## Looking for docs
