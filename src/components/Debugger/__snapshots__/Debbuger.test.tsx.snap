@@ -10,8 +10,6 @@ exports[`Debugger should render with current screen %s 1`] = `
   z-index: 10000;
   overflow: hidden;
   pointer-events: none;
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
 }
 
@@ -56,54 +54,54 @@ exports[`Debugger should render with current screen %s 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-2 {
     max-width: 45rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-2 {
     max-width: 60rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-2 {
     max-width: 71.25rem;
   }
@@ -114,41 +112,42 @@ exports[`Debugger should render with current screen %s 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
@@ -169,35 +168,35 @@ exports[`Debugger should render with current screen %s 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .grid-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .grid-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -213,8 +212,6 @@ exports[`Debugger should render with current screen %s 1`] = `
   z-index: 10000;
   overflow: hidden;
   pointer-events: none;
-  -webkit-transform-origin: 50% 0%;
-  -ms-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
 }
 
@@ -259,54 +256,54 @@ exports[`Debugger should render with current screen %s 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-2 {
     max-width: 45rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-2 {
     max-width: 60rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-2 {
     max-width: 71.25rem;
   }
@@ -317,41 +314,42 @@ exports[`Debugger should render with current screen %s 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .emotion-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .emotion-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-4 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
@@ -372,35 +370,35 @@ exports[`Debugger should render with current screen %s 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .emotion-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .emotion-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-6 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -416,6 +414,61 @@ exports[`Debugger should render with current screen %s 1`] = `
     <div
       class="emotion-4 emotion-5"
     >
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
+      <div
+        class="emotion-6 emotion-7"
+      >
+        <div />
+      </div>
       <div
         class="emotion-6 emotion-7"
       >
