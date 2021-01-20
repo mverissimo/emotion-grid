@@ -2,7 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react';
 import { withTheme } from '@emotion/react';
 
 import { Types } from '../../types';
-import { getBreakpoint } from '../../utils/getBreakpoint';
+import { getBreakpoint } from '../../utils/get-breakpoint';
 
 function Hidden({
   xs,

@@ -70,6 +70,6 @@ const baseStyle = ({
   }
 `;
 
-export const GridOverlay: FC<GridOverlayProps> = styled('div')<
-  GridOverlayProps
->(baseStyle);
+export const GridOverlay: FC<GridOverlayProps> = styled(
+  'div'
+)<GridOverlayProps>(baseStyle);

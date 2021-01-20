@@ -6,7 +6,7 @@ import { Row } from '../Row';
 import { Col } from '../Col';
 
 import { Types } from '../../types';
-import { getBreakpoint } from '../../utils/getBreakpoint';
+import { getBreakpoint } from '../../utils/get-breakpoint';
 import { config } from '../../config';
 
 import { Button } from './Button';
