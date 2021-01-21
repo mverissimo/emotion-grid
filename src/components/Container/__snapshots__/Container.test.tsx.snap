@@ -9,54 +9,54 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-0 {
     max-width: 45rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-0 {
     max-width: 60rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-0 {
     max-width: 71.25rem;
   }
@@ -76,41 +76,42 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
@@ -131,35 +132,35 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .grid-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .grid-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -174,54 +175,54 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-0 {
     max-width: 45rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-0 {
     max-width: 60rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-0 {
     max-width: 71.25rem;
   }
@@ -241,41 +242,42 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
@@ -296,35 +298,35 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .emotion-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .emotion-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-4 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -355,54 +357,54 @@ exports[`Container should render with default styles 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-0 {
     max-width: 45rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-0 {
     max-width: 60rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-0 {
     max-width: 71.25rem;
   }
@@ -416,54 +418,54 @@ exports[`Container should render with default styles 1`] = `
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-0 {
     max-width: 45rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-0 {
     max-width: 60rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-0 {
     max-width: 71.25rem;
   }
@@ -485,35 +487,35 @@ exports[`Container should render with fluid styles when passed the fluid prop 1`
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .grid-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -528,35 +530,35 @@ exports[`Container should render with fluid styles when passed the fluid prop 1`
   box-sizing: border-box;
 }
 
-@media (min-width:1em) {
+@media (min-width: 1em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:33.75em) {
+@media (min-width: 33.75em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:48em) {
+@media (min-width: 48em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:64em) {
+@media (min-width: 64em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
-@media (min-width:71.25em) {
+@media (min-width: 71.25em) {
   .emotion-0 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
