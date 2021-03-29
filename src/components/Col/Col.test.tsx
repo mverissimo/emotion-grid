@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { Col } from './Col';
+import { Breakpoints } from '../../types/types';
 
 describe('Col', () => {
   it('should render with default styles', () => {
@@ -28,6 +29,17 @@ describe('Col', () => {
 
   it.each(sizes)('should render with offset styles', (size) => {
     const { container } = render(<Col offset={size}>Col</Col>);
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('should handle 0 offset styles', () => {
+    const offsets = { xs: 0, lg: 9 } as Record<Breakpoints, number>;
+    const { container } = render(
+      <Col md={8} offset={offsets}>
+        Col
+      </Col>
+    );
 
     expect(container.firstChild).toMatchSnapshot();
   });
