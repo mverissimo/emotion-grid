@@ -31,10 +31,4 @@ describe('Col', () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
-
-  it.each(sizes)('should render with offset styles for media %s', (size) => {
-    const { container } = render(<Col offset={size}>Col</Col>);
-
-    expect(container.firstChild).toMatchSnapshot();
-  });
 });
