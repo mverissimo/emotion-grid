@@ -43,4 +43,15 @@ describe('Col', () => {
 
     expect(container.firstChild).toMatchSnapshot();
   });
+
+  it('should handle negative offset styles', () => {
+    const offsets = { xs: -1, lg: 9 } as Record<Breakpoints, number>;
+    const { container } = render(
+      <Col md={8} offset={offsets}>
+        Col
+      </Col>
+    );
+
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });

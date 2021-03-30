@@ -59,9 +59,9 @@ const offsetStyle = ({ theme, offset }: Types.StyleProps & Types.ColProps) =>
       offset[breakpoint] &&
       css`
         ${media(breakpoint)} {
-          margin-left: ${(offset[breakpoint] /
-            config(theme).columns[breakpoint]) *
-          100}%;
+          margin-left: ${offset[breakpoint] >= 0
+            ? (offset[breakpoint] / config(theme).columns[breakpoint]) * 100
+            : 0}%;
         }
       `
   );
