@@ -54,12 +54,12 @@ const sizeStyle = (props: Types.StyleProps & Types.ColProps) => {
 const offsetStyle = ({ theme, offset }: Types.StyleProps & Types.ColProps) =>
   offset &&
   typeof offset === 'object' &&
-  constants.BREAKPOINTS.map(
+  constants.BREAKPOINTS.filter((breakpoint) => offset[breakpoint]).map(
     (breakpoint) =>
       offset[breakpoint] &&
       css`
         ${media(breakpoint)} {
-          margin-left: ${offset[breakpoint] > 0
+          margin-left: ${offset[breakpoint] >= 0
             ? (offset[breakpoint] / config(theme).columns[breakpoint]) * 100
             : 0}%;
         }
