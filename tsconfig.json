@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
+    "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -16,6 +16,7 @@
     "declaration": true,
     "jsx": "react-jsx",
     "strictNullChecks": false,
+    "jsxImportSource": "@emotion/react",
     "plugins": [
       {
         "name": "typescript-styled-plugin",
@@ -23,7 +24,9 @@
           "validProperties": ["label"]
         }
       }
-    ]
+    ],
+    "typeRoots": ["node_modules/@types", "src/types"]
   },
-  "include": ["./src"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.*"]
 }
