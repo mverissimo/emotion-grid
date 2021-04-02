@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "dist/emotion-grid.cjs.js",
   "module": "dist/emotion-grid.esm.js",
+  "types": "dist/emotion-grid.cjs.d.ts",
   "repository": "git@github.com:mverissimo/emotion-grid.git",
   "author": "Matheus Verissimo <mverissimoo@hotmail.com>",
   "license": "MIT",
@@ -53,15 +54,6 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "yarn lint",
-      "yarn lint:fix"
-    ],
-    "**/**/**/*.+(js|json|jsx|ts|tsx|mdx|md)": [
-      "pretty-quick --staged"
-    ]
   },
   "devDependencies": {
     "@babel/preset-env": "7.13.12",
