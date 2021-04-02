@@ -1,16 +1,17 @@
-import { useState, useEffect } from 'react';
+import React, { ReactElement } from 'react';
 import { withTheme } from '@emotion/react';
 
-import { Types } from '../../types';
 import { getBreakpoint } from '../../utils/get-breakpoint';
+import { StyleProps } from '../../types/emotion';
 
-function ScreenClass({
-  theme,
-  render,
-}: Types.StyleProps & Types.ScreenClassProps) {
-  const [{ screen }, setState] = useState({ screen: 'xs' });
+export interface ScreenClassProps {
+  render: (screen: string) => ReactElement;
+}
 
-  useEffect(() => {
+function ScreenClass({ theme, render }: ScreenClassProps & StyleProps) {
+  const [{ screen }, setState] = React.useState({ screen: 'xs' });
+
+  React.useEffect(() => {
     const setScreen = () => {
       let lastScreen = screen;
       const currentScreen = getBreakpoint(theme);
