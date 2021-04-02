@@ -1,17 +1,15 @@
-import { FC } from 'react';
-
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { config } from '../../config';
-import { Types } from '../../types';
+import { config } from '../../../../config';
+import { StyleProps } from '../../../../types/emotion';
 
 type ButtonProps = {
   isActive: boolean;
   onClick?: (e: React.MouseEvent) => void;
 };
 
-const baseStyle = ({ theme, isActive }: Types.StyleProps & ButtonProps) => css`
+const baseStyle = ({ theme, isActive }: ButtonProps & StyleProps) => css`
   label: button;
 
   display: flex;
@@ -32,7 +30,7 @@ const baseStyle = ({ theme, isActive }: Types.StyleProps & ButtonProps) => css`
   padding: 0;
   box-sizing: border-box;
 
-  color: ${isActive ? `${config(theme).debug.color}` : '#fff'};
+  color: ${isActive ? `${config(theme).grid.colors.blue}` : '#fff'};
   font-size: 14px;
   font-weight: bold;
 
@@ -45,11 +43,13 @@ const baseStyle = ({ theme, isActive }: Types.StyleProps & ButtonProps) => css`
   transition: background, color 0.2s;
 
   background: ${isActive
-    ? `${config(theme).debug.color}3D`
-    : `${config(theme).debug.color}`};
+    ? `${config(theme).grid.colors.blue}3D`
+    : `${config(theme).grid.colors.blue}`};
   border: 0;
   border-radius: 50%;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
 `;
 
-export const Button: FC<ButtonProps> = styled('div')<ButtonProps>(baseStyle);
+const Button = styled('div')<ButtonProps>(baseStyle);
+
+export default Button;

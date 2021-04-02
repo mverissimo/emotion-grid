@@ -1,8 +1,9 @@
-import { Types } from '../types';
 import { config } from '../config';
 
-export function media(breakpoint: Types.Breakpoints): string {
-  const breakpoints = config().breakpoints;
+import { Breakpoints } from '../types/emotion';
+
+export function media(breakpoint: Breakpoints): string {
+  const breakpoints = config().grid.breakpoints;
 
   if (!Object.keys(breakpoints).includes(breakpoint)) {
     throw new Error(`Breakpoint '${breakpoint}' not found`);

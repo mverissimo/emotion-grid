@@ -1,12 +1,11 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 
-import { Container } from './Container';
+import { Container } from '.';
 import { Row } from '../Row';
 import { Col } from '../Col';
 
 describe('Container', () => {
-  it('should render with default styles', () => {
+  it('should render with default styles for media %s', () => {
     const { container } = render(<Container>Container</Container>);
 
     expect(container.firstChild).toMatchSnapshot();

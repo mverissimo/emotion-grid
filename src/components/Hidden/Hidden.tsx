@@ -1,8 +1,17 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React from 'react';
 import { withTheme } from '@emotion/react';
 
-import { Types } from '../../types';
+import { StyleProps } from '../../types/emotion';
 import { getBreakpoint } from '../../utils/get-breakpoint';
+
+export interface HiddenProps {
+  xs?: boolean;
+  sm?: boolean;
+  md?: boolean;
+  lg?: boolean;
+  xl?: boolean;
+  children: React.ReactNode;
+}
 
 function Hidden({
   xs,
@@ -12,10 +21,11 @@ function Hidden({
   xl,
   theme,
   children,
-}: Types.StyleProps & Types.HiddenProps) {
-  const [{ screen }, setState] = useState({ screen: getBreakpoint() });
+}: HiddenProps & StyleProps) {
+  const initialState = getBreakpoint();
+  const [{ screen }, setState] = React.useState({ screen: initialState });
 
-  useEffect(() => {
+  React.useEffect(() => {
     const setScreen = () => {
       const currentScreen = getBreakpoint(theme);
 
@@ -59,7 +69,7 @@ function Hidden({
     }
   };
 
-  return !isHidden() ? <Fragment>{children}</Fragment> : null;
+  return !isHidden() ? <React.Fragment>{children}</React.Fragment> : null;
 }
 
 export default withTheme(Hidden);

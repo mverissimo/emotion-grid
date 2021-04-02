@@ -156,13 +156,9 @@ exports[`Debugger should render with current screen %s 1`] = `
 
 .grid-6 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -358,13 +354,9 @@ exports[`Debugger should render with current screen %s 1`] = `
 
 .emotion-6 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;

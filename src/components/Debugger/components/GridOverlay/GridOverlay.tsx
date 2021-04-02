@@ -1,31 +1,28 @@
-import React, { FC } from 'react';
-
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { config } from '../../config';
-import { Types } from '../../types';
-import { Container } from '../Container';
-import { Row } from '../Row';
-import { Col } from '../Col';
+import { config } from '../../../../config';
+
+import { Container } from '../../../Container';
+import { Row } from '../../../Row';
+import { Col } from '../../../Col';
+
+import { StyleProps } from '../../../../types/emotion';
 
 type GridOverlayProps = {
   visible?: boolean;
   children?: React.ReactNode;
 };
 
-const baseStyle = ({
-  theme,
-  visible,
-}: Types.StyleProps & GridOverlayProps) => css`
+const baseStyle = ({ theme, visible }: GridOverlayProps & StyleProps) => css`
   label: grid-overlay;
 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-
   bottom: 0;
+
   z-index: 10000;
   overflow: hidden;
 
@@ -41,7 +38,7 @@ const baseStyle = ({
 
   ${Row} {
     height: 100%;
-    background: ${config(theme).debug.color}0D;
+    background: ${config(theme).grid.colors.blue}0D;
   }
 
   ${Col} {
@@ -64,12 +61,12 @@ const baseStyle = ({
         width: 100%;
         height: 100%;
 
-        background: ${config(theme).debug.color}0D;
+        background: ${config(theme).grid.colors.blue}0D;
       }
     }
   }
 `;
 
-export const GridOverlay: FC<GridOverlayProps> = styled(
-  'div'
-)<GridOverlayProps>(baseStyle);
+const GridOverlay = styled('div')<GridOverlayProps>(baseStyle);
+
+export default GridOverlay;

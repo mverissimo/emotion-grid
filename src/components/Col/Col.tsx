@@ -1,49 +1,61 @@
-import React, { FC } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { config, constants } from '../../config';
+import { config, BREAKPOINTS } from '../../config';
 import { media } from '../../utils';
-import { Types } from '../../types';
 
-const baseStyle = ({ theme }: Types.StyleProps) => css`
+import { Breakpoints, StyleProps } from '../../types/emotion';
+
+export interface ColProps {
+  xs?: number;
+  sm?: number;
+  md?: number;
+  lg?: number;
+  xl?: number;
+  offset?: Record<Breakpoints, number>;
+  style?: CSSProperties;
+  className?: string;
+  children: ReactNode;
+}
+
+const baseStyle = ({ theme }: StyleProps) => css`
   label: col;
 
   position: relative;
-
-  flex-basis: 0;
-  flex-grow: 1;
+  flex: 1 0 0%;
 
   width: 100%;
   max-width: 100%;
 
   box-sizing: border-box;
 
-  ${constants.BREAKPOINTS.map(
+  ${BREAKPOINTS.map(
     (breakpoint) =>
       css`
         ${media(breakpoint)} {
-          padding-left: ${config(theme).gutter[breakpoint] / 2}rem;
-          padding-right: ${config(theme).gutter[breakpoint] / 2}rem;
+          padding-left: ${config(theme).grid.gutter[breakpoint] / 2}rem;
+          padding-right: ${config(theme).grid.gutter[breakpoint] / 2}rem;
         }
       `
   )}
 `;
 
-const sizeStyle = (props: Types.StyleProps & Types.ColProps) => {
+const sizeStyle = (props: ColProps & StyleProps) => {
   const { theme } = props;
 
   return css`
-    ${constants.BREAKPOINTS.map(
+    ${BREAKPOINTS.map(
       (breakpoint) =>
         props[breakpoint] &&
         css`
           ${media(breakpoint)} {
             flex: 0 0
-              ${(props[breakpoint] / config(theme).columns[breakpoint]) * 100}%;
+              ${(props[breakpoint] / config(theme).grid.columns[breakpoint]) *
+              100}%;
             max-width: ${(props[breakpoint] /
-              config(theme).columns[breakpoint]) *
+              config(theme).grid.columns[breakpoint]) *
             100}%;
           }
         `
@@ -51,29 +63,22 @@ const sizeStyle = (props: Types.StyleProps & Types.ColProps) => {
   `;
 };
 
-const offsetStyle = ({ theme, offset }: Types.StyleProps & Types.ColProps) =>
+const offsetStyle = ({ theme, offset }: ColProps & StyleProps) =>
   offset &&
   typeof offset === 'object' &&
-  constants.BREAKPOINTS.filter((breakpoint) => offset[breakpoint]).map(
+  BREAKPOINTS.filter((breakpoint) => offset[breakpoint]).map(
     (breakpoint) =>
       offset[breakpoint] &&
       css`
         ${media(breakpoint)} {
           margin-left: ${offset[breakpoint] >= 0
-            ? (offset[breakpoint] / config(theme).columns[breakpoint]) * 100
+            ? (offset[breakpoint] / config(theme).grid.columns[breakpoint]) *
+              100
             : 0}%;
         }
       `
   );
 
-const BaseCol: FC<Types.ColProps> = ({ style, className, children }) => (
-  <div style={style} className={className}>
-    {children}
-  </div>
-);
+const Col = styled('div')<ColProps>(baseStyle, sizeStyle, offsetStyle);
 
-export const Col = styled(BaseCol)<Types.ColProps>(
-  baseStyle,
-  sizeStyle,
-  offsetStyle
-);
+export default Col;

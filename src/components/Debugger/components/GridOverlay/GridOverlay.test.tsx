@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { GridOverlay } from './GridOverlay';
+import { GridOverlay } from '.';
 
 describe('Grid Overlay', () => {
   it('should render with default styles', () => {
