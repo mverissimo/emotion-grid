@@ -1,15 +1,32 @@
-import React, { FC } from 'react';
-
+import { CSSProperties, ReactNode } from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { Types } from '../../types';
-import { config, constants } from '../../config';
+import { config, BREAKPOINTS } from '../../config';
 import { media } from '../../utils';
 
 import { Col } from '../Col';
 
-const baseStyle = ({ theme }: Types.StyleProps) => css`
+import {
+  Align,
+  AlignProps,
+  Justify,
+  JustifyProps,
+  Breakpoints,
+  StyleProps,
+} from '../../types/emotion';
+
+export interface RowProps {
+  align?: AlignProps | Align;
+  justify?: JustifyProps | Justify;
+  reverse?: Array<Breakpoints> | boolean;
+  noGutters?: boolean;
+  style?: CSSProperties;
+  className?: string;
+  children: ReactNode;
+}
+
+const baseStyle = ({ theme }: StyleProps) => css`
   label: row;
 
   display: flex;
@@ -17,20 +34,20 @@ const baseStyle = ({ theme }: Types.StyleProps) => css`
 
   box-sizing: border-box;
 
-  ${constants.BREAKPOINTS.map(
+  ${BREAKPOINTS.map(
     (breakpoint) => css`
       ${media(breakpoint)} {
-        margin-left: -${config(theme).gutter[breakpoint] / 2}rem;
-        margin-right: -${config(theme).gutter[breakpoint] / 2}rem;
+        margin-left: -${config(theme).grid.gutter[breakpoint] / 2}rem;
+        margin-right: -${config(theme).grid.gutter[breakpoint] / 2}rem;
       }
     `
   )}
 `;
 
-const alignStyle = ({ align }: Types.RowProps) =>
+const alignStyle = ({ align }: RowProps) =>
   align &&
   (typeof align === 'object'
-    ? constants.BREAKPOINTS.map(
+    ? BREAKPOINTS.map(
         (breakpoint) =>
           align[breakpoint] &&
           css`
@@ -43,10 +60,10 @@ const alignStyle = ({ align }: Types.RowProps) =>
         align-items: ${align};
       `);
 
-const justifyStyle = ({ justify }: Types.RowProps) =>
+const justifyStyle = ({ justify }: RowProps) =>
   justify &&
   (typeof justify === 'object'
-    ? constants.BREAKPOINTS.map(
+    ? BREAKPOINTS.map(
         (breakpoint) =>
           justify[breakpoint] &&
           css`
@@ -59,10 +76,10 @@ const justifyStyle = ({ justify }: Types.RowProps) =>
         justify-content: ${justify};
       `);
 
-const reverseStyle = ({ reverse }: Types.RowProps) =>
+const reverseStyle = ({ reverse }: RowProps) =>
   reverse &&
   (Array.isArray(reverse)
-    ? constants.BREAKPOINTS.map(
+    ? BREAKPOINTS.map(
         (breakpoint) => css`
           ${media(breakpoint)} {
             flex-direction: ${reverse.includes(breakpoint)
@@ -75,7 +92,7 @@ const reverseStyle = ({ reverse }: Types.RowProps) =>
         flex-direction: row-reverse;
       `);
 
-const noGutterStyle = ({ noGutters }: Types.RowProps) =>
+const noGutterStyle = ({ noGutters }: RowProps) =>
   noGutters &&
   css`
     ${Col} {
@@ -84,16 +101,12 @@ const noGutterStyle = ({ noGutters }: Types.RowProps) =>
     }
   `;
 
-const BaseRow: FC<Types.RowProps> = ({ style, className, children }) => (
-  <div style={style} className={className}>
-    {children}
-  </div>
-);
-
-export const Row = styled(BaseRow)<Types.RowProps>(
+const Row = styled('div')<RowProps>(
   baseStyle,
   alignStyle,
   justifyStyle,
   reverseStyle,
   noGutterStyle
 );
+
+export default Row;
