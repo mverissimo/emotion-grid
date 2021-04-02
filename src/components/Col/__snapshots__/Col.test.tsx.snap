@@ -1,15 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Col should handle 0 offset styles 1`] = `
+exports[`Col should handle with offset styles on media { xs: 1, sm: 2, md: 3, lg: 4, xl: 5 } 1`] = `
 .grid-0 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -59,21 +55,41 @@ exports[`Col should handle 0 offset styles 1`] = `
   }
 }
 
+@media (min-width: 1em) {
+  .grid-0 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 33.75em) {
+  .grid-0 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 48em) {
+  .grid-0 {
+    margin-left: 25%;
+  }
+}
+
 @media (min-width: 64em) {
   .grid-0 {
-    margin-left: 75%;
+    margin-left: 33.33333333333333%;
+  }
+}
+
+@media (min-width: 71.25em) {
+  .grid-0 {
+    margin-left: 41.66666666666667%;
   }
 }
 
 .emotion-0 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -123,177 +139,50 @@ exports[`Col should handle 0 offset styles 1`] = `
   }
 }
 
+@media (min-width: 1em) {
+  .emotion-0 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 33.75em) {
+  .emotion-0 {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 48em) {
+  .emotion-0 {
+    margin-left: 25%;
+  }
+}
+
 @media (min-width: 64em) {
   .emotion-0 {
-    margin-left: 75%;
+    margin-left: 33.33333333333333%;
+  }
+}
+
+@media (min-width: 71.25em) {
+  .emotion-0 {
+    margin-left: 41.66666666666667%;
   }
 }
 
 <div
   class="emotion-0 emotion-1"
+  offset="[object Object]"
 >
   Col
 </div>
 `;
 
-exports[`Col should handle negative offset styles 1`] = `
+exports[`Col should render with default styles on media %s 1`] = `
 .grid-0 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-@media (min-width: 1em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 33.75em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 48em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 71.25em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 48em) {
-  .grid-0 {
-    -webkit-flex: 0 0 66.66666666666666%;
-    -ms-flex: 0 0 66.66666666666666%;
-    flex: 0 0 66.66666666666666%;
-    max-width: 66.66666666666666%;
-  }
-}
-
-@media (min-width: 1em) {
-  .grid-0 {
-    margin-left: 0%;
-  }
-}
-
-@media (min-width: 64em) {
-  .grid-0 {
-    margin-left: 75%;
-  }
-}
-
-.emotion-0 {
-  position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-@media (min-width: 1em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 33.75em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 48em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 71.25em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 48em) {
-  .emotion-0 {
-    -webkit-flex: 0 0 66.66666666666666%;
-    -ms-flex: 0 0 66.66666666666666%;
-    flex: 0 0 66.66666666666666%;
-    max-width: 66.66666666666666%;
-  }
-}
-
-@media (min-width: 1em) {
-  .emotion-0 {
-    margin-left: 0%;
-  }
-}
-
-@media (min-width: 64em) {
-  .emotion-0 {
-    margin-left: 75%;
-  }
-}
-
-<div
-  class="emotion-0 emotion-1"
->
-  Col
-</div>
-`;
-
-exports[`Col should render with default styles 1`] = `
-.grid-0 {
-  position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -336,13 +225,9 @@ exports[`Col should render with default styles 1`] = `
 
 .emotion-0 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -390,16 +275,12 @@ exports[`Col should render with default styles 1`] = `
 </div>
 `;
 
-exports[`Col should render with offset styles 1`] = `
+exports[`Col should render with offset styles on media { xs: 1, sm: 2, md: 3, lg: 4, xl: 5 } 1`] = `
 .grid-0 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -472,13 +353,9 @@ exports[`Col should render with offset styles 1`] = `
 
 .emotion-0 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -551,187 +428,18 @@ exports[`Col should render with offset styles 1`] = `
 
 <div
   class="emotion-0 emotion-1"
+  offset="[object Object]"
 >
   Col
 </div>
 `;
 
-exports[`Col should render with offset styles for media { xs: 1, sm: 2, md: 3, lg: 4, xl: 5 } 1`] = `
+exports[`Col should render with width styles on media { xs: 1, sm: 2, md: 3, lg: 4, xl: 5 } 1`] = `
 .grid-0 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-@media (min-width: 1em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 33.75em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 48em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 71.25em) {
-  .grid-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 1em) {
-  .grid-0 {
-    margin-left: 25%;
-  }
-}
-
-@media (min-width: 33.75em) {
-  .grid-0 {
-    margin-left: 25%;
-  }
-}
-
-@media (min-width: 48em) {
-  .grid-0 {
-    margin-left: 25%;
-  }
-}
-
-@media (min-width: 64em) {
-  .grid-0 {
-    margin-left: 33.33333333333333%;
-  }
-}
-
-@media (min-width: 71.25em) {
-  .grid-0 {
-    margin-left: 41.66666666666667%;
-  }
-}
-
-.emotion-0 {
-  position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-@media (min-width: 1em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 33.75em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 48em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 64em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 71.25em) {
-  .emotion-0 {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-  }
-}
-
-@media (min-width: 1em) {
-  .emotion-0 {
-    margin-left: 25%;
-  }
-}
-
-@media (min-width: 33.75em) {
-  .emotion-0 {
-    margin-left: 25%;
-  }
-}
-
-@media (min-width: 48em) {
-  .emotion-0 {
-    margin-left: 25%;
-  }
-}
-
-@media (min-width: 64em) {
-  .emotion-0 {
-    margin-left: 33.33333333333333%;
-  }
-}
-
-@media (min-width: 71.25em) {
-  .emotion-0 {
-    margin-left: 41.66666666666667%;
-  }
-}
-
-<div
-  class="emotion-0 emotion-1"
->
-  Col
-</div>
-`;
-
-exports[`Col should render with width styles for media { xs: 1, sm: 2, md: 3, lg: 4, xl: 5 } 1`] = `
-.grid-0 {
-  position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -819,13 +527,9 @@ exports[`Col should render with width styles for media { xs: 1, sm: 2, md: 3, lg
 
 .emotion-0 {
   position: relative;
-  -webkit-flex-basis: 0;
-  -ms-flex-preferred-size: 0;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
