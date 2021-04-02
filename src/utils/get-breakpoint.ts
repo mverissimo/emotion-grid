@@ -1,14 +1,14 @@
-import { config, constants } from '../config';
-import { Types } from '../types';
+import { config, BREAKPOINTS } from '../config';
+import { ThemeBase, Breakpoints } from '../types/emotion';
 
-export function getBreakpoint(props: Types.Theme = {}): Types.Breakpoints {
+export function getBreakpoint(props: ThemeBase = {}): Breakpoints {
   let screen;
 
   if (typeof window !== 'undefined' && window.matchMedia) {
-    Object.values(config(props).breakpoints).map(
+    Object.values(config(props).grid.breakpoints).map(
       (breakpoint, index) =>
         window.matchMedia(`(min-width: ${breakpoint}em)`).matches &&
-        (screen = constants.BREAKPOINTS[index])
+        (screen = BREAKPOINTS[index])
     );
   }
 
