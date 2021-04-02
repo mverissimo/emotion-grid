@@ -1,27 +1,31 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import { withTheme } from '@emotion/react';
+
+import { getBreakpoint } from '../../utils/get-breakpoint';
+import { config } from '../../config';
 
 import { Container } from '../Container';
 import { Row } from '../Row';
 import { Col } from '../Col';
 
-import { Types } from '../../types';
-import { getBreakpoint } from '../../utils/get-breakpoint';
-import { config } from '../../config';
+import { Button } from './components/Button';
+import { GridOverlay } from './components/GridOverlay';
 
-import { Button } from './Button';
-import { GridOverlay } from './GridOverlay';
+import { StyleProps } from '../../types/emotion';
 
-// https://stackoverflow.com/questions/39549424/how-to-create-unique-keys-for-react-elements/51428373
+/**
+ * NOTE:
+ * https://stackoverflow.com/questions/39549424/how-to-create-unique-keys-for-react-elements/51428373
+ */
 const generateKey = (pre: string | number): string => {
   return `${pre}_${new Date().getTime()}`;
 };
 
-function Debugger({ theme }: Types.StyleProps) {
+function Debugger({ theme }: StyleProps) {
   const [visible, setVisible] = useState(false);
   const [{ screen, columns }, setState] = useState({
     screen: getBreakpoint(theme),
-    columns: config(theme).columns[getBreakpoint(theme)],
+    columns: config(theme).grid.columns[getBreakpoint(theme)],
   });
 
   const toggleVisible = () => setVisible(!visible);
@@ -36,7 +40,7 @@ function Debugger({ theme }: Types.StyleProps) {
 
         setState({
           screen: currentScreen,
-          columns: config(theme).columns[currentScreen],
+          columns: config(theme).grid.columns[currentScreen],
         });
       }
     };
@@ -71,7 +75,7 @@ function Debugger({ theme }: Types.StyleProps) {
         </Container>
       </GridOverlay>
 
-      <Button onClick={() => toggleVisible()} isActive={visible}>
+      <Button onClick={toggleVisible} isActive={visible}>
         {screen}
       </Button>
     </Fragment>
