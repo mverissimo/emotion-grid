@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect } from 'react';
+import React from 'react';
 import { withTheme } from '@emotion/react';
 
 import { getBreakpoint } from '../../utils/get-breakpoint';
@@ -22,15 +22,15 @@ const generateKey = (pre: string | number): string => {
 };
 
 function Debugger({ theme }: StyleProps) {
-  const [visible, setVisible] = useState(false);
-  const [{ screen, columns }, setState] = useState({
+  const [visible, setVisible] = React.useState(false);
+  const [{ screen, columns }, setState] = React.useState({
     screen: getBreakpoint(theme),
     columns: config(theme).grid.columns[getBreakpoint(theme)],
   });
 
   const toggleVisible = () => setVisible(!visible);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const setScreen = () => {
       let lastScreen = screen;
       const currentScreen = getBreakpoint(theme);
@@ -60,7 +60,7 @@ function Debugger({ theme }: StyleProps) {
   }, [theme, screen]);
 
   return (
-    <Fragment>
+    <React.Fragment>
       <GridOverlay visible={visible}>
         <Container>
           <Row>
@@ -78,7 +78,7 @@ function Debugger({ theme }: StyleProps) {
       <Button onClick={toggleVisible} isActive={visible}>
         {screen}
       </Button>
-    </Fragment>
+    </React.Fragment>
   );
 }
 

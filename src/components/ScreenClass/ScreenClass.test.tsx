@@ -5,7 +5,9 @@ import { ScreenClass } from '.';
 
 describe('ScreenClass', () => {
   it('should render with current screen %s', () => {
-    const { container } = render(
+    const {
+      container: { firstChild },
+    } = render(
       <ScreenClass
         render={(screen) => {
           return <div>{screen}</div>;
@@ -13,6 +15,6 @@ describe('ScreenClass', () => {
       />
     );
 
-    expect(container.firstChild).toMatchSnapshot();
+    expect(firstChild).toMatchSnapshot();
   });
 });

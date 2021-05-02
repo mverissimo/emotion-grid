@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { withTheme } from '@emotion/react';
 
 import { getBreakpoint } from '../../utils/get-breakpoint';
@@ -10,7 +10,7 @@ export interface VisibleProps {
   md?: boolean;
   lg?: boolean;
   xl?: boolean;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 function Visible({
