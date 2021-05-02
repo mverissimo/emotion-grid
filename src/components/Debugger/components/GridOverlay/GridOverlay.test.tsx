@@ -5,14 +5,18 @@ import { GridOverlay } from '.';
 
 describe('Grid Overlay', () => {
   it('should render with default styles', () => {
-    const { container } = render(<GridOverlay />);
+    const {
+      container: { firstChild },
+    } = render(<GridOverlay />);
 
-    expect(container.firstChild).toMatchSnapshot();
+    expect(firstChild).toMatchSnapshot();
   });
 
   it('should render with visible styles when passed the visible prop', () => {
-    const { container } = render(<GridOverlay visible />);
+    const {
+      container: { firstChild },
+    } = render(<GridOverlay visible />);
 
-    expect(container.firstChild).toMatchSnapshot();
+    expect(firstChild).toMatchSnapshot();
   });
 });

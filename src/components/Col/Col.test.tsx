@@ -5,9 +5,11 @@ import { Breakpoints } from '../../types/emotion';
 
 describe('Col', () => {
   it('should render with default styles on media %s', () => {
-    const { container } = render(<Col>Col</Col>);
+    const {
+      container: { firstChild },
+    } = render(<Col>Col</Col>);
 
-    expect(container.firstChild).toMatchSnapshot();
+    expect(firstChild).toMatchSnapshot();
   });
 
   it.each([
@@ -21,9 +23,11 @@ describe('Col', () => {
   ] as Record<Breakpoints, number>[])(
     'should render with width styles on media %s',
     (size) => {
-      const { container } = render(<Col {...size}>Col</Col>);
+      const {
+        container: { firstChild },
+      } = render(<Col {...size}>Col</Col>);
 
-      expect(container.firstChild).toMatchSnapshot();
+      expect(firstChild).toMatchSnapshot();
     }
   );
 
@@ -38,9 +42,11 @@ describe('Col', () => {
   ] as Record<Breakpoints, number>[])(
     'should render with offset styles on media %s',
     (size) => {
-      const { container } = render(<Col offset={size}>Col</Col>);
+      const {
+        container: { firstChild },
+      } = render(<Col offset={size}>Col</Col>);
 
-      expect(container.firstChild).toMatchSnapshot();
+      expect(firstChild).toMatchSnapshot();
     }
   );
 
@@ -55,13 +61,15 @@ describe('Col', () => {
   ] as Record<Breakpoints, number>[])(
     'should handle with offset styles on media %s',
     (offset) => {
-      const { container } = render(
+      const {
+        container: { firstChild },
+      } = render(
         <Col md={8} offset={offset}>
           Col
         </Col>
       );
 
-      expect(container.firstChild).toMatchSnapshot();
+      expect(firstChild).toMatchSnapshot();
     }
   );
 });

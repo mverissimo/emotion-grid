@@ -4,8 +4,10 @@ import { Debugger } from '.';
 
 describe('Debugger', () => {
   it('should render with current screen %s', () => {
-    const { container } = render(<Debugger />);
+    const {
+      container: { firstChild },
+    } = render(<Debugger />);
 
-    expect(container.firstChild).toMatchSnapshot();
+    expect(firstChild).toMatchSnapshot();
   });
 });
