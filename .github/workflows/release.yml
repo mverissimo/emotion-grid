@@ -36,7 +36,7 @@ jobs:
         run: yarn lint:ci
 
       - name: Tests
-        run: yarn test:ci -u
+        run: yarn test:ci
 
       - name: Release
         env:
