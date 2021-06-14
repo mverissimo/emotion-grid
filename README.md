@@ -56,4 +56,4 @@ You can check [here](https://emotion-grid.netlify.app/), guides and API referenc
 
 ## Contributing
 
-Feel like contributing? That's awesome! We have a [contributing guide](https://google.com/) to help guide you.
+Feel like contributing? That's awesome! We have a [contributing guide](https://github.com/mverissimo/emotion-grid/blob/master/CONTRIBUTING.md) to help guide you.
