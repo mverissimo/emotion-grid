@@ -5,7 +5,7 @@ route: /api
 
 import { Playground } from 'docz';
 import { ThemeProvider } from 'emotion-theming';
-import { Container, Row, Col } from '../';
+import { Container, Row, Col } from '../src';
 
 # API
 
@@ -34,14 +34,14 @@ With exception the [media query](/utilities) that use **rem** unit.
 To set your custom config, you need to import the ThemeProvider from emotion theming', and pass a named object `grid` to the theme prop, as the example below:
 
 ```jsx
-import { ThemeProvider } from 'emotion-theming';
+import { ThemeProvider } from '@emotion/react';
 ```
 
 > Try to change the config in playground:
 
 <Playground>
   {() => {
-    const customConf = {
+    const theme = {
       grid: {
         container: {
           xs: 'full',
@@ -84,7 +84,7 @@ import { ThemeProvider } from 'emotion-theming';
       },
     };
     return (
-      <ThemeProvider theme={customConf}>
+      <ThemeProvider theme={theme}>
         <Container debug>
           <Row>
             <Col>Col auto</Col>
