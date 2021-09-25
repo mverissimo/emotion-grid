@@ -38,69 +38,56 @@
     },
     "distFilenameStrategy": "unscoped-package-name"
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged ",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+      "path": "cz-conventional-changelog"
     }
   },
   "devDependencies": {
-    "@babel/preset-env": "7.14.0",
-    "@babel/preset-typescript": "7.13.0",
-    "@commitlint/cli": "12.1.1",
-    "@commitlint/config-conventional": "12.1.1",
+    "@babel/preset-env": "7.15.6",
+    "@babel/preset-typescript": "7.15.0",
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
     "@emotion/babel-plugin": "^11.3.0",
-    "@emotion/babel-preset-css-prop": "^11.2.0",
     "@emotion/eslint-plugin": "^11.2.0",
     "@emotion/jest": "^11.3.0",
-    "@preconstruct/cli": "2.0.7",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/commit-analyzer": "8.0.1",
-    "@semantic-release/github": "7.2.1",
-    "@semantic-release/npm": "7.1.1",
-    "@semantic-release/release-notes-generator": "9.0.2",
-    "@testing-library/jest-dom": "5.12.0",
-    "@testing-library/react": "11.2.6",
-    "@types/jest": "26.0.23",
-    "@typescript-eslint/eslint-plugin": "4.22.0",
-    "@typescript-eslint/parser": "4.22.0",
+    "@preconstruct/cli": "2.1.4",
+    "@semantic-release/changelog": "^6.0.0",
+    "@semantic-release/commit-analyzer": "9.0.1",
+    "@semantic-release/github": "8.0.1",
+    "@semantic-release/npm": "8.0.0",
+    "@semantic-release/release-notes-generator": "10.0.2",
+    "@testing-library/jest-dom": "5.14.1",
+    "@testing-library/react": "12.1.0",
+    "@types/jest": "27.0.2",
+    "@typescript-eslint/eslint-plugin": "4.31.2",
+    "@typescript-eslint/parser": "4.31.2",
     "babel-eslint": "10.1.0",
     "babel-jest": "26.6.3",
     "babel-plugin-lodash": "^3.3.4",
     "cz-conventional-changelog": "3.3.0",
     "docz": "2.3.1",
-    "eslint": "7.25.0",
+    "eslint": "7.32.0",
     "eslint-config-react-app": "6.0.0",
-    "eslint-plugin-flowtype": "5.7.2",
-    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-flowtype": "6.1.0",
+    "eslint-plugin-import": "2.24.2",
     "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-prettier": "3.4.0",
-    "eslint-plugin-react": "7.23.2",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.26.0",
     "eslint-plugin-react-hooks": "4.2.0",
-    "eslint-plugin-testing-library": "4.1.2",
-    "husky": "^6.0.0",
+    "eslint-plugin-testing-library": "4.12.4",
+    "husky": "^7.0.2",
     "jest": "26.6.3",
-    "lint-staged": "10.5.4",
-    "prettier": "2.2.1",
-    "pretty-quick": "3.1.0",
-    "semantic-release": "17.4.2",
+    "lint-staged": "11.1.2",
+    "prettier": "2.4.1",
+    "pretty-quick": "3.1.1",
+    "semantic-release": "18.0.0",
     "stylelint": "13.13.1",
     "ts-jest": "26.5.5",
-    "typescript": "4.2.4"
+    "typescript": "4.4.3"
   },
   "dependencies": {
-    "@emotion/react": "^11.1.5",
+    "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
