@@ -171,7 +171,6 @@ exports[`Col should handle with offset styles on media { xs: 1, sm: 2, md: 3, lg
 
 <div
   class="emotion-0 emotion-1"
-  offset="[object Object]"
 >
   Col
 </div>
@@ -428,7 +427,6 @@ exports[`Col should render with offset styles on media { xs: 1, sm: 2, md: 3, lg
 
 <div
   class="emotion-0 emotion-1"
-  offset="[object Object]"
 >
   Col
 </div>
