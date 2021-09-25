@@ -2,6 +2,7 @@ import { CSSProperties, ReactNode } from 'react';
 
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
+import isPropValid from '@emotion/is-prop-valid';
 
 import { config, BREAKPOINTS } from '../../config';
 import { media } from '../../utils';
@@ -79,6 +80,8 @@ const offsetStyle = ({ theme, offset }: ColProps & StyleProps) =>
       `
   );
 
-const Col = styled('div')<ColProps>(baseStyle, sizeStyle, offsetStyle);
+const Col = styled('div', {
+  shouldForwardProp: (prop) => isPropValid(prop) && prop !== 'offset',
+})<ColProps>(baseStyle, sizeStyle, offsetStyle);
 
 export default Col;
