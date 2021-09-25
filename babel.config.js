@@ -14,36 +14,24 @@ module.exports = (api) => {
         },
       },
     ],
-    isProd && [
+    [
       '@babel/preset-react',
       {
+        development: !isProd,
         runtime: 'automatic',
         importSource: '@emotion/react',
-      },
-    ],
-    !isProd && [
-      '@babel/preset-react',
-      {
-        development: true,
-        runtime: 'automatic',
-        importSource: '@emotion/react',
-      },
-    ],
-    !isProd && [
-      '@emotion/babel-preset-css-prop',
-      {
-        labelFormat: '[filename]--[local]',
       },
     ],
   ].filter(Boolean);
 
   const plugins = [
     'lodash',
-    isProd && [
+    [
       '@emotion',
       {
-        sourceMap: false,
-        autoLabel: 'never',
+        sourceMap: isProd,
+        autoLabel: 'dev-only',
+        labelFormat: '[filename]--[local]',
       },
     ],
   ].filter(Boolean);
