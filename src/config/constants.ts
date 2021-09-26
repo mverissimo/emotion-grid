@@ -1,8 +1,8 @@
-import { ThemeBase, Breakpoints } from '../types/emotion';
+import { DefaultTheme, Breakpoints } from '../types/emotion';
 
 export const BREAKPOINTS: Array<Breakpoints> = ['xs', 'sm', 'md', 'lg', 'xl'];
 
-export const DEFAULT_CONFIG: ThemeBase = {
+export const DEFAULT_CONFIG: DefaultTheme = {
   grid: {
     container: {
       xs: 'full',
