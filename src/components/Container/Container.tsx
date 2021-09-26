@@ -3,13 +3,13 @@ import { CSSProperties, ReactNode } from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
-import { config, BREAKPOINTS } from '../../config';
-import { media } from '../../utils';
+import { config } from '../../config';
+import { responsive } from '../../utils';
 
 import { Row } from '../Row';
 import { Col } from '../Col';
 
-import { StyleProps } from '../../types/emotion';
+import { DefaultTheme, StyleProps } from '../../types/emotion';
 
 export interface ContainerProps {
   fluid?: boolean;
@@ -30,27 +30,24 @@ const baseStyle = ({ theme }: StyleProps) => css`
 
   box-sizing: border-box;
 
-  ${BREAKPOINTS.map(
-    (breakpoint) => css`
-      ${media(breakpoint)} {
-        padding-left: ${config(theme).grid.padding[breakpoint] / 2}rem;
-        padding-right: ${config(theme).grid.padding[breakpoint] / 2}rem;
-      }
-    `
+  ${responsive(
+    config(theme).grid.breakpoints,
+    (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
+      padding-left: ${config(theme).grid.padding[breakpoint] / 2}rem;
+      padding-right: ${config(theme).grid.padding[breakpoint] / 2}rem;
+  `
   )}
 `;
 
 const fluidStyle = ({ theme, fluid }: ContainerProps & StyleProps) =>
   !fluid &&
-  BREAKPOINTS.map(
-    (breakpoint) => css`
-      ${media(breakpoint)} {
-        ${typeof config(theme).grid.container[breakpoint] === 'number' &&
-        `
-          max-width: ${config(theme).grid.container[breakpoint]}rem;
-        `}
-      }
-    `
+  responsive(
+    config(theme).grid.breakpoints,
+    (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
+      typeof config(theme).grid.container[breakpoint] === 'number' &&
+      `
+        max-width: ${config(theme).grid.container[breakpoint]}rem;
+      `
   );
 
 const debugStyle = ({ theme, debug }: ContainerProps & StyleProps) => {
