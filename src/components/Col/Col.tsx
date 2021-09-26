@@ -4,10 +4,10 @@ import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 import isPropValid from '@emotion/is-prop-valid';
 
-import { config, BREAKPOINTS } from '../../config';
-import { media } from '../../utils';
+import { config } from '../../config';
+import { responsive } from '../../utils';
 
-import { Breakpoints, StyleProps } from '../../types/emotion';
+import { DefaultTheme, StyleProps } from '../../types/emotion';
 
 export interface ColProps {
   xs?: number;
@@ -15,7 +15,7 @@ export interface ColProps {
   md?: number;
   lg?: number;
   xl?: number;
-  offset?: Record<Breakpoints, number>;
+  offset?: DefaultTheme['grid']['breakpoints'];
   style?: CSSProperties;
   className?: string;
   children: ReactNode;
@@ -32,52 +32,46 @@ const baseStyle = ({ theme }: StyleProps) => css`
 
   box-sizing: border-box;
 
-  ${BREAKPOINTS.map(
-    (breakpoint) =>
-      css`
-        ${media(breakpoint)} {
-          padding-left: ${config(theme).grid.gutter[breakpoint] / 2}rem;
-          padding-right: ${config(theme).grid.gutter[breakpoint] / 2}rem;
-        }
-      `
-  )}
+  ${responsive(
+    config(theme).grid.breakpoints,
+    (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
+      padding-left: ${config(theme).grid.gutter[breakpoint] / 2}rem;
+      padding-right: ${config(theme).grid.gutter[breakpoint] / 2}rem;
+    `
+  )};
 `;
 
-const sizeStyle = (props: ColProps & StyleProps) => {
-  const { theme } = props;
-
-  return css`
-    ${BREAKPOINTS.map(
-      (breakpoint) =>
-        props[breakpoint] &&
-        css`
-          ${media(breakpoint)} {
-            flex: 0 0
-              ${(props[breakpoint] / config(theme).grid.columns[breakpoint]) *
-              100}%;
-            max-width: ${(props[breakpoint] /
-              config(theme).grid.columns[breakpoint]) *
-            100}%;
-          }
-        `
-    )}
-  `;
-};
+const sizeStyle = (props: ColProps & StyleProps) =>
+  responsive(
+    config(props.theme).grid.breakpoints,
+    (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
+      props[breakpoint] &&
+      `
+        flex: 0 0 ${
+          (props[breakpoint] / config(props.theme).grid.columns[breakpoint]) *
+          100
+        }%;
+        max-width: ${
+          (props[breakpoint] / config(props.theme).grid.columns[breakpoint]) *
+          100
+        }%;
+    `
+  );
 
 const offsetStyle = ({ theme, offset }: ColProps & StyleProps) =>
   offset &&
-  typeof offset === 'object' &&
-  BREAKPOINTS.filter((breakpoint) => offset[breakpoint]).map(
-    (breakpoint) =>
+  responsive(
+    config(theme).grid.breakpoints,
+    (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
       offset[breakpoint] &&
-      css`
-        ${media(breakpoint)} {
-          margin-left: ${offset[breakpoint] >= 0
+      `
+        margin-left: ${
+          offset[breakpoint] >= 0
             ? (offset[breakpoint] / config(theme).grid.columns[breakpoint]) *
               100
-            : 0}%;
-        }
-      `
+            : 0
+        }%;
+    `
   );
 
 const Col = styled('div', {
