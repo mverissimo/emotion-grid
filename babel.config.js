@@ -25,7 +25,6 @@ module.exports = (api) => {
   ].filter(Boolean);
 
   const plugins = [
-    'lodash',
     [
       '@emotion',
       {
