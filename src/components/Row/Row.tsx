@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
@@ -67,10 +68,12 @@ const alignStyle = ({ theme, align }: RowProps & StyleProps) =>
         (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
           align[breakpoint] &&
           `
+            label: row--align;
             align-items: ${align[breakpoint]};
           `
       )
     : css`
+        label: row--align;
         align-items: ${align};
       `;
 
@@ -81,11 +84,13 @@ const justifyStyle = ({ theme, justify }: RowProps & StyleProps) =>
         (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
           justify[breakpoint] &&
           `
+            label: row--justify;
             justify-content: ${justify[breakpoint]};
           `
       )
     : css`
-        justify-items: ${justify};
+        label: row--justify;
+        justify-content: ${justify};
       `;
 
 const reverseStyle = ({ theme, reverse }: RowProps & StyleProps) =>
@@ -94,12 +99,14 @@ const reverseStyle = ({ theme, reverse }: RowProps & StyleProps) =>
     ? responsive(
         config(theme).grid.breakpoints,
         (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
+          label: row--reverse;
           flex-direction: ${
             reverse.includes(breakpoint) ? 'row-reverse' : 'row'
           };
         `
       )
     : css`
+        label: row--reverse;
         flex-direction: row-reverse;
       `);
 
@@ -107,6 +114,7 @@ const noGutterStyle = ({ noGutters }: RowProps) =>
   noGutters &&
   css`
     ${Col} {
+      label: col--no-gutters;
       padding-left: 0;
       padding-right: 0;
     }

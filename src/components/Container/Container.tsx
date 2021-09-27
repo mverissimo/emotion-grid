@@ -1,4 +1,4 @@
-import { CSSProperties, ReactNode } from 'react';
+import { ReactNode } from 'react';
 
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
@@ -12,10 +12,19 @@ import { Col } from '../Col';
 import { DefaultTheme, StyleProps } from '../../types/emotion';
 
 export interface ContainerProps {
+  /**
+   * Set the container `max-width`
+   */
   fluid?: boolean;
+
+  /**
+   * Set a visual background
+   */
   debug?: boolean;
-  style?: CSSProperties;
-  className?: string;
+
+  /**
+   * The children nodes
+   */
   children: ReactNode;
 }
 
@@ -46,6 +55,7 @@ const fluidStyle = ({ theme, fluid }: ContainerProps & StyleProps) =>
     (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
       typeof config(theme).grid.container[breakpoint] === 'number' &&
       `
+        label: container--fluid;
         max-width: ${config(theme).grid.container[breakpoint]}rem;
       `
   );
@@ -55,10 +65,12 @@ const debugStyle = ({ theme, debug }: ContainerProps & StyleProps) => {
     debug &&
     css`
       ${Row} {
+        label: row--debug;
         background: ${config(theme).grid.colors.blue}0D;
       }
 
       ${Col} {
+        label: col--debug;
         background: ${config(theme).grid.colors.blue}0D;
         border: 1px solid ${config(theme).grid.colors.blue};
       }

@@ -806,7 +806,10 @@ exports[`Row should render justify styles when when passed the justify center pr
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 @media (min-width: 1em) {
@@ -854,7 +857,10 @@ exports[`Row should render justify styles when when passed the justify center pr
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 @media (min-width: 1em) {
@@ -911,7 +917,10 @@ exports[`Row should render justify styles when when passed the justify flex-end 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 @media (min-width: 1em) {
@@ -959,7 +968,10 @@ exports[`Row should render justify styles when when passed the justify flex-end 
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 @media (min-width: 1em) {
@@ -1016,7 +1028,10 @@ exports[`Row should render justify styles when when passed the justify flex-star
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 @media (min-width: 1em) {
@@ -1064,7 +1079,10 @@ exports[`Row should render justify styles when when passed the justify flex-star
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 @media (min-width: 1em) {
@@ -1121,7 +1139,10 @@ exports[`Row should render justify styles when when passed the justify space-aro
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: space-around;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
 }
 
 @media (min-width: 1em) {
@@ -1169,7 +1190,10 @@ exports[`Row should render justify styles when when passed the justify space-aro
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: space-around;
+  -webkit-box-pack: space-around;
+  -ms-flex-pack: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
 }
 
 @media (min-width: 1em) {
@@ -1226,7 +1250,9 @@ exports[`Row should render justify styles when when passed the justify space-bet
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
 @media (min-width: 1em) {
@@ -1274,7 +1300,9 @@ exports[`Row should render justify styles when when passed the justify space-bet
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   box-sizing: border-box;
-  justify-items: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
 @media (min-width: 1em) {
