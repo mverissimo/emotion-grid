@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`responsive should return the for each breakpoint 1`] = `
+Array [
+  Object {
+    "map": undefined,
+    "name": "2er7l4",
+    "next": undefined,
+    "styles": "
+      @media (min-width: 1em) {
+        
+        background: red;
+      
+      }
+    ",
+    "toString": [Function],
+  },
+  Object {
+    "map": undefined,
+    "name": "1ace4ch",
+    "next": undefined,
+    "styles": "
+      @media (min-width: 33.75em) {
+        
+        background: red;
+      
+      }
+    ",
+    "toString": [Function],
+  },
+  Object {
+    "map": undefined,
+    "name": "q7k0m7",
+    "next": undefined,
+    "styles": "
+      @media (min-width: 48em) {
+        
+        background: red;
+      
+      }
+    ",
+    "toString": [Function],
+  },
+  Object {
+    "map": undefined,
+    "name": "199et9d",
+    "next": undefined,
+    "styles": "
+      @media (min-width: 64em) {
+        
+        background: red;
+      
+      }
+    ",
+    "toString": [Function],
+  },
+  Object {
+    "map": undefined,
+    "name": "1gzbfso",
+    "next": undefined,
+    "styles": "
+      @media (min-width: 71.25em) {
+        
+        background: red;
+      
+      }
+    ",
+    "toString": [Function],
+  },
+]
+`;

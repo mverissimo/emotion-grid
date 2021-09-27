@@ -35,7 +35,7 @@ export interface JustifyProps {
   xl?: Justify;
 }
 
-export interface ThemeBase {
+export interface DefaultTheme {
   grid?: {
     container: Record<Breakpoints, number | string>;
     padding: Record<Breakpoints, number>;
@@ -48,9 +48,9 @@ export interface ThemeBase {
   };
 }
 export interface StyleProps {
-  theme: ThemeBase;
+  theme: DefaultTheme;
 }
 
 declare module '@emotion/react' {
-  export interface Theme extends ThemeBase {}
+  export interface Theme extends DefaultTheme {}
 }

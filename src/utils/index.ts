@@ -1,1 +1,1 @@
-export { media } from './media';
+export { media, responsive } from './media';

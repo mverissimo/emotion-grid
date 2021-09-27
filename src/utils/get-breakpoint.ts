@@ -1,7 +1,9 @@
 import { config, BREAKPOINTS } from '../config';
-import { ThemeBase, Breakpoints } from '../types/emotion';
+import { DefaultTheme } from '../types/emotion';
 
-export function getBreakpoint(props: ThemeBase = {}): Breakpoints {
+export function getBreakpoint(
+  props: DefaultTheme = {}
+): keyof DefaultTheme['grid']['breakpoints'] {
   let screen;
 
   if (typeof window !== 'undefined' && window.matchMedia) {
