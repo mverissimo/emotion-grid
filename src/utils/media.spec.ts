@@ -5,7 +5,7 @@ import { config } from '../config';
 describe('responsive', () => {
   it('should return the for each breakpoint', () => {
     const result = responsive(
-      config().grid.breakpoints,
+      config()?.grid?.breakpoints,
       () => `
         background: red;
       `

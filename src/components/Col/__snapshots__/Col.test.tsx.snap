@@ -92,7 +92,7 @@ exports[`Col should render with default styles 1`] = `
 }
 
 <div
-  class="emotion-0 emotion-1"
+  class="EmotionGrid-Col emotion-0"
 >
   Col
 </div>
@@ -280,7 +280,7 @@ exports[`Col should render with offset styles on breakpoint { xs: 1, sm: 2, md: 
 }
 
 <div
-  class="emotion-0 emotion-1"
+  class="EmotionGrid-Col emotion-0"
 >
   Col
 </div>
@@ -468,7 +468,7 @@ exports[`Col should render with size styles on breakpoint { xs: 1, sm: 2, md: 3,
 }
 
 <div
-  class="emotion-0 emotion-1"
+  class="EmotionGrid-Col emotion-0"
 >
   Col
 </div>

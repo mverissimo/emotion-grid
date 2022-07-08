@@ -9,9 +9,6 @@ module.exports = (api) => {
       '@babel/preset-env',
       {
         loose: true,
-        targets: {
-          esmodules: !isProd,
-        },
       },
     ],
     [

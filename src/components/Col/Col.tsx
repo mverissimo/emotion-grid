@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { Ref, ReactNode } from 'react';
 
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
@@ -28,6 +28,11 @@ export interface ColProps {
    * The column `span`
    */
   offset?: DefaultTheme['grid']['breakpoints'];
+
+  /**
+   * The ref to the HTML DOM element
+   */
+  ref?: Ref<HTMLDivElement>;
 
   /**
    * The children nodes
@@ -90,8 +95,12 @@ const offsetStyle = ({ theme, offset }: ColProps & StyleProps) =>
     `
   );
 
-const Col = styled('div', {
+const ColEl = styled('div', {
   shouldForwardProp: (prop) => isPropValid(prop) && prop !== 'offset',
 })<ColProps>(baseStyle, sizeStyle, offsetStyle);
+
+const Col = React.forwardRef((props: ColProps, ref?: ColProps['ref']) => {
+  return <ColEl ref={ref} className="EmotionGrid-Col" {...props} />;
+});
 
 export default Col;

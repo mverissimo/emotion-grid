@@ -1,4 +1,9 @@
 {
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  },
   "extends": ["react-app", "plugin:testing-library/react"],
   "plugins": ["prettier", "testing-library", "@emotion"],
   "rules": {
@@ -8,10 +13,5 @@
     "@emotion/pkg-renaming": "error",
     "@emotion/styled-import": "error",
     "@emotion/import-from-emotion": "error"
-  },
-  "settings": {
-    "react": {
-      "version": "latest"
-    }
   }
 }

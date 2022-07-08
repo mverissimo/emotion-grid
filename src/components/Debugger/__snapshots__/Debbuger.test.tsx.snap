@@ -13,30 +13,30 @@ exports[`Debugger should render with current screen %s 1`] = `
   transform-origin: 50% 0%;
 }
 
-.grid-0 .grid-3 {
+.grid-0 .EmotionGrid-Container {
   height: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.grid-0 .grid-5 {
+.grid-0 .EmotionGrid-Row {
   height: 100%;
   background: #0470F50D;
 }
 
-.grid-0 .grid-7 {
+.grid-0 .EmotionGrid-Col {
   height: 100%;
 }
 
-.grid-0 .grid-7>div {
+.grid-0 .EmotionGrid-Col>div {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.grid-0 .grid-7>div::before,
-.grid-0 .grid-7>div::after {
+.grid-0 .EmotionGrid-Col>div::before,
+.grid-0 .EmotionGrid-Col>div::after {
   content: '';
   position: absolute;
   top: 0;
@@ -46,7 +46,7 @@ exports[`Debugger should render with current screen %s 1`] = `
   background: #0470F50D;
 }
 
-.grid-2 {
+.grid-1 {
   width: 100%;
   max-width: 100%;
   margin-right: auto;
@@ -55,59 +55,59 @@ exports[`Debugger should render with current screen %s 1`] = `
 }
 
 @media (min-width: 1em) {
-  .grid-2 {
+  .grid-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .grid-2 {
+  .grid-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .grid-2 {
+  .grid-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .grid-2 {
+  .grid-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .grid-2 {
+  .grid-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .grid-2 {
+  .grid-1 {
     max-width: 45rem;
   }
 }
 
 @media (min-width: 64em) {
-  .grid-2 {
+  .grid-1 {
     max-width: 60rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .grid-2 {
+  .grid-1 {
     max-width: 71.25rem;
   }
 }
 
-.grid-4 {
+.grid-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -120,41 +120,41 @@ exports[`Debugger should render with current screen %s 1`] = `
 }
 
 @media (min-width: 1em) {
-  .grid-4 {
+  .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .grid-4 {
+  .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .grid-4 {
+  .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .grid-4 {
+  .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .grid-4 {
+  .grid-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-.grid-6 {
+.grid-3 {
   position: relative;
   -webkit-flex: 1 0 0%;
   -ms-flex: 1 0 0%;
@@ -165,35 +165,35 @@ exports[`Debugger should render with current screen %s 1`] = `
 }
 
 @media (min-width: 1em) {
-  .grid-6 {
+  .grid-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .grid-6 {
+  .grid-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .grid-6 {
+  .grid-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .grid-6 {
+  .grid-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .grid-6 {
+  .grid-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
@@ -211,30 +211,30 @@ exports[`Debugger should render with current screen %s 1`] = `
   transform-origin: 50% 0%;
 }
 
-.emotion-0 .emotion-3 {
+.emotion-0 .EmotionGrid-Container {
   height: 100%;
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
 
-.emotion-0 .emotion-5 {
+.emotion-0 .EmotionGrid-Row {
   height: 100%;
   background: #0470F50D;
 }
 
-.emotion-0 .emotion-7 {
+.emotion-0 .EmotionGrid-Col {
   height: 100%;
 }
 
-.emotion-0 .emotion-7>div {
+.emotion-0 .EmotionGrid-Col>div {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.emotion-0 .emotion-7>div::before,
-.emotion-0 .emotion-7>div::after {
+.emotion-0 .EmotionGrid-Col>div::before,
+.emotion-0 .EmotionGrid-Col>div::after {
   content: '';
   position: absolute;
   top: 0;
@@ -244,7 +244,7 @@ exports[`Debugger should render with current screen %s 1`] = `
   background: #0470F50D;
 }
 
-.emotion-2 {
+.emotion-1 {
   width: 100%;
   max-width: 100%;
   margin-right: auto;
@@ -253,59 +253,59 @@ exports[`Debugger should render with current screen %s 1`] = `
 }
 
 @media (min-width: 1em) {
-  .emotion-2 {
+  .emotion-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .emotion-2 {
+  .emotion-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .emotion-2 {
+  .emotion-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .emotion-2 {
+  .emotion-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .emotion-2 {
+  .emotion-1 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .emotion-2 {
+  .emotion-1 {
     max-width: 45rem;
   }
 }
 
 @media (min-width: 64em) {
-  .emotion-2 {
+  .emotion-1 {
     max-width: 60rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .emotion-2 {
+  .emotion-1 {
     max-width: 71.25rem;
   }
 }
 
-.emotion-4 {
+.emotion-2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -318,41 +318,41 @@ exports[`Debugger should render with current screen %s 1`] = `
 }
 
 @media (min-width: 1em) {
-  .emotion-4 {
+  .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .emotion-4 {
+  .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .emotion-4 {
+  .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .emotion-4 {
+  .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .emotion-4 {
+  .emotion-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-.emotion-6 {
+.emotion-3 {
   position: relative;
   -webkit-flex: 1 0 0%;
   -ms-flex: 1 0 0%;
@@ -363,106 +363,106 @@ exports[`Debugger should render with current screen %s 1`] = `
 }
 
 @media (min-width: 1em) {
-  .emotion-6 {
+  .emotion-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .emotion-6 {
+  .emotion-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .emotion-6 {
+  .emotion-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .emotion-6 {
+  .emotion-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .emotion-6 {
+  .emotion-3 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 <div
-  class="emotion-0 emotion-1"
+  class="emotion-0"
 >
   <div
-    class="emotion-2 emotion-3"
+    class="EmotionGrid-Container emotion-1"
   >
     <div
-      class="emotion-4 emotion-5"
+      class="EmotionGrid-Row emotion-2"
     >
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>
       <div
-        class="emotion-6 emotion-7"
+        class="EmotionGrid-Col emotion-3"
       >
         <div />
       </div>

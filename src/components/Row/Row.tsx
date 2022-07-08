@@ -1,12 +1,10 @@
-import { ReactNode } from 'react';
+import React, { Ref, ReactNode } from 'react';
 
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
 import { config } from '../../config';
 import { responsive } from '../../utils';
-
-import { Col } from '../Col';
 
 import {
   Align,
@@ -37,6 +35,11 @@ export interface RowProps {
    * Remove the gutter(padding) from `Cols`
    */
   noGutters?: boolean;
+
+  /**
+   * The ref to the HTML DOM element
+   */
+  ref?: Ref<HTMLDivElement>;
 
   /**
    * The children nodes
@@ -113,19 +116,23 @@ const reverseStyle = ({ theme, reverse }: RowProps & StyleProps) =>
 const noGutterStyle = ({ noGutters }: RowProps) =>
   noGutters &&
   css`
-    ${Col} {
+    .EmotionGrid-Col {
       label: col--no-gutters;
       padding-left: 0;
       padding-right: 0;
     }
   `;
 
-const Row = styled('div')<RowProps>(
+const RowEl = styled('div')<RowProps>(
   baseStyle,
   alignStyle,
   justifyStyle,
   reverseStyle,
   noGutterStyle
 );
+
+const Row = React.forwardRef((props: RowProps, ref?: RowProps['ref']) => {
+  return <RowEl ref={ref} className="EmotionGrid-Row" {...props} />;
+});
 
 export default Row;
