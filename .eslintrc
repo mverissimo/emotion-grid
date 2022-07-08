@@ -8,10 +8,5 @@
     "@emotion/pkg-renaming": "error",
     "@emotion/styled-import": "error",
     "@emotion/import-from-emotion": "error"
-  },
-  "settings": {
-    "react": {
-      "version": "latest"
-    }
   }
 }

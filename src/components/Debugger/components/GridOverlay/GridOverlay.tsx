@@ -3,10 +3,6 @@ import { css } from '@emotion/react';
 
 import { config } from '../../../../config';
 
-import { Container } from '../../../Container';
-import { Row } from '../../../Row';
-import { Col } from '../../../Col';
-
 import { StyleProps } from '../../../../types/emotion';
 
 type GridOverlayProps = {
@@ -29,19 +25,19 @@ const baseStyle = ({ theme, visible }: GridOverlayProps & StyleProps) => css`
   pointer-events: none;
   transform-origin: 50% 0%;
 
-  ${Container} {
+  .EmotionGrid-Container {
     height: 100%;
 
     opacity: ${visible ? 1 : 0};
     transition: opacity 0.2s;
   }
 
-  ${Row} {
+  .EmotionGrid-Row {
     height: 100%;
     background: ${config(theme).grid.colors.blue}0D;
   }
 
-  ${Col} {
+  .EmotionGrid-Col {
     height: 100%;
 
     & > div {

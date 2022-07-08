@@ -62,16 +62,16 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   }
 }
 
-.grid-0 .grid-3 {
+.grid-0 .EmotionGrid-Row {
   background: #0470F50D;
 }
 
-.grid-0 .grid-5 {
+.grid-0 .EmotionGrid-Col {
   background: #0470F50D;
   border: 1px solid #0470F5;
 }
 
-.grid-2 {
+.grid-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -84,41 +84,41 @@ exports[`Container should render with debug styles when passed the debug prop 1`
 }
 
 @media (min-width: 1em) {
-  .grid-2 {
+  .grid-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .grid-2 {
+  .grid-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .grid-2 {
+  .grid-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .grid-2 {
+  .grid-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .grid-2 {
+  .grid-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-.grid-4 {
+.grid-2 {
   position: relative;
   -webkit-flex: 1 0 0%;
   -ms-flex: 1 0 0%;
@@ -129,35 +129,35 @@ exports[`Container should render with debug styles when passed the debug prop 1`
 }
 
 @media (min-width: 1em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .grid-4 {
+  .grid-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
@@ -224,16 +224,16 @@ exports[`Container should render with debug styles when passed the debug prop 1`
   }
 }
 
-.emotion-0 .emotion-3 {
+.emotion-0 .EmotionGrid-Row {
   background: #0470F50D;
 }
 
-.emotion-0 .emotion-5 {
+.emotion-0 .EmotionGrid-Col {
   background: #0470F50D;
   border: 1px solid #0470F5;
 }
 
-.emotion-2 {
+.emotion-1 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -246,41 +246,41 @@ exports[`Container should render with debug styles when passed the debug prop 1`
 }
 
 @media (min-width: 1em) {
-  .emotion-2 {
+  .emotion-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .emotion-2 {
+  .emotion-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .emotion-2 {
+  .emotion-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .emotion-2 {
+  .emotion-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .emotion-2 {
+  .emotion-1 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
   }
 }
 
-.emotion-4 {
+.emotion-2 {
   position: relative;
   -webkit-flex: 1 0 0%;
   -ms-flex: 1 0 0%;
@@ -291,48 +291,48 @@ exports[`Container should render with debug styles when passed the debug prop 1`
 }
 
 @media (min-width: 1em) {
-  .emotion-4 {
+  .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 33.75em) {
-  .emotion-4 {
+  .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 48em) {
-  .emotion-4 {
+  .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 64em) {
-  .emotion-4 {
+  .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 @media (min-width: 71.25em) {
-  .emotion-4 {
+  .emotion-2 {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
 }
 
 <div
-  class="emotion-0 emotion-1"
+  class="EmotionGrid-Container emotion-0"
 >
   <div
-    class="emotion-2 emotion-3"
+    class="EmotionGrid-Row emotion-1"
   >
     <div
-      class="emotion-4 emotion-5"
+      class="EmotionGrid-Col emotion-2"
     >
       Col
     </div>
@@ -464,7 +464,7 @@ exports[`Container should render with default styles for media %s 1`] = `
 }
 
 <div
-  class="emotion-0 emotion-1"
+  class="EmotionGrid-Container emotion-0"
 >
   Container
 </div>
@@ -558,7 +558,7 @@ exports[`Container should render with fluid styles when passed the fluid prop 1`
 }
 
 <div
-  class="emotion-0 emotion-1"
+  class="EmotionGrid-Container emotion-0"
 >
   Container fluid
 </div>

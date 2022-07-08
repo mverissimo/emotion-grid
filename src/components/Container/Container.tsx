@@ -1,13 +1,10 @@
-import { ReactNode } from 'react';
+import React, { Ref, ReactNode } from 'react';
 
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 
 import { config } from '../../config';
 import { responsive } from '../../utils';
-
-import { Row } from '../Row';
-import { Col } from '../Col';
 
 import { DefaultTheme, StyleProps } from '../../types/emotion';
 
@@ -21,6 +18,11 @@ export interface ContainerProps {
    * Set a visual background
    */
   debug?: boolean;
+
+  /**
+   * The ref to the HTML DOM element
+   */
+  ref?: Ref<HTMLDivElement>;
 
   /**
    * The children nodes
@@ -64,12 +66,12 @@ const debugStyle = ({ theme, debug }: ContainerProps & StyleProps) => {
   return (
     debug &&
     css`
-      ${Row} {
+      .EmotionGrid-Row {
         label: row--debug;
         background: ${config(theme).grid.colors.blue}0D;
       }
 
-      ${Col} {
+      .EmotionGrid-Col {
         label: col--debug;
         background: ${config(theme).grid.colors.blue}0D;
         border: 1px solid ${config(theme).grid.colors.blue};
@@ -78,10 +80,18 @@ const debugStyle = ({ theme, debug }: ContainerProps & StyleProps) => {
   );
 };
 
-const Container = styled('div')<ContainerProps>(
+const ContainerEl = styled('div')<ContainerProps>(
   baseStyle,
   fluidStyle,
   debugStyle
+);
+
+const Container = React.forwardRef(
+  (props: ContainerProps, ref?: ContainerProps['ref']) => {
+    return (
+      <ContainerEl ref={ref} className="EmotionGrid-Container" {...props} />
+    );
+  }
 );
 
 export default Container;
