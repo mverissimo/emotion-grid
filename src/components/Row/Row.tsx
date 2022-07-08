@@ -1,10 +1,7 @@
-import React, { Ref, ReactNode } from 'react';
+import React from 'react';
+import type { Ref, ReactNode } from 'react';
 
 import styled from '@emotion/styled';
-import { css } from '@emotion/react';
-
-import { config } from '../../config';
-import { responsive } from '../../utils';
 
 import {
   Align,
@@ -12,8 +9,9 @@ import {
   Justify,
   JustifyProps,
   DefaultTheme,
-  StyleProps,
 } from '../../types/emotion';
+
+import * as styles from './Row.styles';
 
 export interface RowProps {
   /**
@@ -47,88 +45,12 @@ export interface RowProps {
   children: ReactNode;
 }
 
-const baseStyle = ({ theme }: StyleProps) => css`
-  label: row;
-
-  display: flex;
-  flex-wrap: wrap;
-
-  box-sizing: border-box;
-
-  ${responsive(
-    config(theme).grid.breakpoints,
-    (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
-      margin-left: -${config(theme).grid.gutter[breakpoint] / 2}rem;
-      margin-right: -${config(theme).grid.gutter[breakpoint] / 2}rem;
-    `
-  )};
-`;
-
-const alignStyle = ({ theme, align }: RowProps & StyleProps) =>
-  typeof align === 'object'
-    ? responsive(
-        config(theme).grid.breakpoints,
-        (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
-          align[breakpoint] &&
-          `
-            label: row--align;
-            align-items: ${align[breakpoint]};
-          `
-      )
-    : css`
-        label: row--align;
-        align-items: ${align};
-      `;
-
-const justifyStyle = ({ theme, justify }: RowProps & StyleProps) =>
-  typeof justify === 'object'
-    ? responsive(
-        config(theme).grid.breakpoints,
-        (breakpoint: keyof DefaultTheme['grid']['breakpoints']) =>
-          justify[breakpoint] &&
-          `
-            label: row--justify;
-            justify-content: ${justify[breakpoint]};
-          `
-      )
-    : css`
-        label: row--justify;
-        justify-content: ${justify};
-      `;
-
-const reverseStyle = ({ theme, reverse }: RowProps & StyleProps) =>
-  reverse &&
-  (Array.isArray(reverse)
-    ? responsive(
-        config(theme).grid.breakpoints,
-        (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
-          label: row--reverse;
-          flex-direction: ${
-            reverse.includes(breakpoint) ? 'row-reverse' : 'row'
-          };
-        `
-      )
-    : css`
-        label: row--reverse;
-        flex-direction: row-reverse;
-      `);
-
-const noGutterStyle = ({ noGutters }: RowProps) =>
-  noGutters &&
-  css`
-    .EmotionGrid-Col {
-      label: col--no-gutters;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  `;
-
 const RowEl = styled('div')<RowProps>(
-  baseStyle,
-  alignStyle,
-  justifyStyle,
-  reverseStyle,
-  noGutterStyle
+  styles.base,
+  styles.align,
+  styles.justify,
+  styles.reverse,
+  styles.noGutter
 );
 
 const Row = React.forwardRef((props: RowProps, ref?: RowProps['ref']) => {
