@@ -19,7 +19,8 @@ export const base = ({ theme }: StyleProps) => css`
     (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
       margin-left: -${config(theme).grid.gutter[breakpoint] / 2}rem;
       margin-right: -${config(theme).grid.gutter[breakpoint] / 2}rem;
-    `
+    `,
+    theme
   )};
 `;
 
@@ -32,7 +33,8 @@ export const align = ({ theme, align }: RowProps & StyleProps) =>
           `
             label: row--align;
             align-items: ${align[breakpoint]};
-          `
+          `,
+        theme
       )
     : css`
         label: row--align;
@@ -48,7 +50,8 @@ export const justify = ({ theme, justify }: RowProps & StyleProps) =>
           `
             label: row--justify;
             justify-content: ${justify[breakpoint]};
-          `
+          `,
+        theme
       )
     : css`
         label: row--justify;
@@ -65,7 +68,8 @@ export const reverse = ({ theme, reverse }: RowProps & StyleProps) =>
           flex-direction: ${
             reverse.includes(breakpoint) ? 'row-reverse' : 'row'
           };
-        `
+        `,
+        theme
       )
     : css`
         label: row--reverse;

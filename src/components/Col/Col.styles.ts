@@ -22,7 +22,8 @@ export const base = ({ theme }: StyleProps) => css`
     (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
       padding-left: ${config(theme).grid.gutter[breakpoint] / 2}rem;
       padding-right: ${config(theme).grid.gutter[breakpoint] / 2}rem;
-    `
+    `,
+    theme
   )};
 `;
 
@@ -41,7 +42,8 @@ export const size = (props: ColProps & StyleProps) =>
           (props[breakpoint] / config(props.theme).grid.columns[breakpoint]) *
           100
         }%;
-    `
+    `,
+    props.theme
   );
 
 export const offset = ({ theme, offset }: ColProps & StyleProps) =>
@@ -58,5 +60,6 @@ export const offset = ({ theme, offset }: ColProps & StyleProps) =>
               100
             : 0
         }%;
-    `
+    `,
+    theme
   );
