@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Ref, ReactNode } from 'react';
+import type { Ref, ReactNode, CSSProperties } from 'react';
 
 import styled from '@emotion/styled';
 
@@ -43,6 +43,11 @@ export interface RowProps {
    * The children nodes
    */
   children: ReactNode;
+  
+  /**
+   * The custom style inline
+   */
+  style?: CSSProperties;
 }
 
 const RowEl = styled('div')<RowProps>(
