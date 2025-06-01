@@ -22,8 +22,7 @@ export const base = ({ theme }: StyleProps) => css`
     (breakpoint: keyof DefaultTheme['grid']['breakpoints']) => `
     padding-left: ${config(theme).grid.padding[breakpoint] / 2}rem;
     padding-right: ${config(theme).grid.padding[breakpoint] / 2}rem;
-`,
-    theme
+`
   )}
 `;
 
@@ -36,8 +35,7 @@ export const fluid = ({ theme, fluid }: ContainerProps & StyleProps) =>
       `
       label: container--fluid;
       max-width: ${config(theme).grid.container[breakpoint]}rem;
-    `,
-    theme
+    `
   );
 
 export const debug = ({ theme, debug }: ContainerProps & StyleProps) => {
