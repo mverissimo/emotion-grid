@@ -4,8 +4,8 @@ import { config } from '../config';
 
 import { Breakpoints, DefaultTheme } from '../types/emotion';
 
-export function media(breakpoint: Breakpoints, theme: DefaultTheme): string {
-  const breakpoints = config(theme).grid.breakpoints;
+export function media(breakpoint: Breakpoints): string {
+  const breakpoints = config().grid.breakpoints;
 
   if (!Object.keys(breakpoints).includes(breakpoint)) {
     throw new Error(`Breakpoint '${breakpoint}' not found`);
@@ -16,13 +16,12 @@ export function media(breakpoint: Breakpoints, theme: DefaultTheme): string {
 
 export function responsive(
   breakpoints: DefaultTheme['grid']['breakpoints'] | Array<Breakpoints>,
-  mapper: (value: any) => any,
-  theme?: DefaultTheme
+  mapper: (value: any) => any
 ) {
   if (Array.isArray(breakpoints)) {
     return breakpoints.map(
       (breakpoint): SerializedStyles => css`
-        ${media(breakpoint, theme)} {
+        ${media(breakpoint)} {
           ${mapper(breakpoint)}
         }
       `
@@ -31,7 +30,7 @@ export function responsive(
 
   return Object.keys(breakpoints).map(
     (breakpoint): SerializedStyles => css`
-      ${media(breakpoint as Breakpoints, theme)} {
+      ${media(breakpoint as Breakpoints)} {
         ${mapper(breakpoint)}
       }
     `
