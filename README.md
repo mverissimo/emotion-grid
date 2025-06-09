@@ -1,3 +1,8 @@
+# DEPRECATED
+
+Use [emotion-grid-system](https://github.com/mverissimo/emotion-grid-system) instead
+
+
 # Emotion grid
 
 A responsive (mobile-first) grid system built with emotion.
